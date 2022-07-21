@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -31,7 +33,7 @@
           </p>
         </article>
         <article>
-          <h2>ПРОЗРАЧНОСТЬ</h2>
+          <h2>Прозрачность</h2>
           <p>
             Показываем, из каких элементов складывается стоимость сайта, а также на каком этапе
             разработки находимся.
@@ -129,117 +131,132 @@
           <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт.</span>
           Поэтому не теряйте время! Пока вы раздумываете, ваши клиенты уходят к конкурентам.
         </p>
-        <button type="button">
-          <a href="">ВСЕ УСЛУГИ</a>
-        </button>
+        <a href="">ВСЕ УСЛУГИ</a>
       </footer>
     </section>
     <section class="facts">
       <h1>факты</h1>
-      <ul>
-        <li>
-          <h2>27</h2>
-          <p>Cертифицированных сотрудников Битрикс</p>
-        </li>
-        <li>
-          <h2>250+</h2>
-          <p>Сертифицированных сотрудников Битрикс</p>
-        </li>
-        <li>
-          <h2>140+</h2>
-          <p>Сертифицированных сотрудников Битрикс</p>
-        </li>
-        <li>
-          <h2>50</h2>
-          <p>Сертифицированных сотрудников Битрикс</p>
-        </li>
-      </ul>
+      <div>
+        <span>27</span>
+        <p>Cертифицированных сотрудников Битрикс</p>
+      </div>
+      <div>
+        <span>250+</span>
+        <p>Сертифицированных сотрудников Битрикс</p>
+      </div>
+      <div>
+        <span>140+</span>
+        <p>Сертифицированных сотрудников Битрикс</p>
+      </div>
+      <div>
+        <span>50</span>
+        <p>Сертифицированных сотрудников Битрикс</p>
+      </div>
     </section>
     <section class="benefits">
       <h1>преимущества</h1>
-      <ul>
-        <li>
+      <div>
+        <article>
           <svg width="30" height="30">
             <use href="./images/sprite.svg#icon-check-circle"></use>
           </svg>
-          <h2>Опыт создания сайтов разных форматов</h2>
+          <div>Опыт создания сайтов разных форматов</div>
           <p>
             Среди наших проектов - интернет-магазины, интернет-порталы, корпоративные IT системы,
             мобильные приложения
           </p>
-        </li>
-        <li>
+        </article>
+        <article>
           <svg width="30" height="30">
             <use href="./images/sprite.svg#icon-check-circle"></use>
           </svg>
-          <h2>Начинаем разработку коммерческих проектов с маркетингового анализа</h2>
+          <div>Начинаем разработку коммерческих проектов с маркетингового анализа</div>
           <p>
             Анализируем потребности вашей «Целевой Аудитории» и ваших конкурентов, чтобы создать
             максимально выгодное предложение для ваших потенциальных клиентов
           </p>
-        </li>
-        <li>
+        </article>
+        <article>
           <svg width="30" height="30">
             <use href="./images/sprite.svg#icon-check-circle"></use>
           </svg>
-          <h2>Опыт работы над сложными проектами</h2>
+          <div>Опыт работы над сложными проектами</div>
           <p>Разрабатываем оригинальные решения для реализации нестандартных задач клиента</p>
-        </li>
-        <li>
+        </article>
+        <article>
           <svg width="30" height="30">
             <use href="./images/sprite.svg#icon-check-circle"></use>
           </svg>
-          <h2>Работаем с учетом бизнес-процессов</h2>
+          <div>Работаем с учетом бизнес-процессов</div>
           <p>
             При разработке сайтов по продаже услуг или сложной продукции (например, промышленное
             производство) учитываем особенности построения бизнес-процессов компании, что
             увеличивает приток заказов онлайн
           </p>
-        </li>
-        <li>
+        </article>
+        <article>
           <svg width="30" height="30">
             <use href="./images/sprite.svg#icon-check-circle"></use>
           </svg>
-          <h2>Проект от начала до его сдачи ведет персональный менеджер</h2>
+          <div>Проект от начала до его сдачи ведет персональный менеджер</div>
           <p>
             Менеджер проекта вникнет в суть вашей задачи, подберет оптимальное по цене и качеству
             решение, оперативно решит все возникающие в процессе работы вопросы
           </p>
-        </li>
-        <li>
+        </article>
+        <article>
           <svg width="30" height="30">
             <use href="./images/sprite.svg#icon-check-circle"></use>
           </svg>
-          <h2>Реанимируем проекты на любой стадии</h2>
+          <div>Реанимируем проекты на любой стадии</div>
           <p>Если ваш подрядчик не справился с проектом, поможем доработать его «под ключ»</p>
-        </li>
-      </ul>
+        </article>
+      </div>
     </section>
     <section class="clients">
       <h1>клиенты</h1>
-      <ul>
-        <li>
-          <img src="./images/mosc.svg" alt="" />
-        </li>
-        <li>
-          <img src="./images/gazprom.svg" alt="" />
-        </li>
-        <li>
-          <img src="./images/mos-kino.svg" alt="" />
-        </li>
-        <li>
-          <img src="./images/rospatriot.svg" alt="" />
-        </li>
-        <li>
-          <img src="./images/front.svg" alt="" />
-        </li>
-        <li>
-          <img src="./images/obi.svg" alt="" />
-        </li>
-        <li>
-          <img src="./images/doshik.svg" alt="" />
-        </li>
-      </ul>
+      <div>
+        <img src="./images/mosc.svg" alt="" />
+      </div>
+      <div>
+        <img src="./images/gazprom.svg" alt="" />
+      </div>
+      <div>
+        <img src="./images/mos-kino.svg" alt="" />
+      </div>
+      <div>
+        <img src="./images/rospatriot.svg" alt="" />
+      </div>
+      <div>
+        <img src="./images/front.svg" alt="" />
+      </div>
+      <div>
+        <img src="./images/obi.svg" alt="" />
+      </div>
+      <div>
+        <img src="./images/doshik.svg" alt="" />
+      </div>
+    </section>
+    <section class="portfolio">
+      <h1>портфолио</h1>
+      <article>
+        <img src="./images/port1.jpg" alt="" />
+        <p>Nunc ullamcorper, justo ac pretium</p>
+        <a href="">cмотреть</a>
+      </article>
+      <article>
+        <img src="./images/port2.jpg" alt="" />
+        <p>Nunc justo ac pretium</p>
+        <a href="">cмотреть</a>
+      </article>
+      <footer>
+        <div>Заголовок про запрос портфолио</div>
+        <p>
+          <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт.</span> Поэтому не теряйте
+          время! Пока вы раздумываете, ваши клиенты уходят к конкурентам.
+        </p>
+        <button type="button" data-modal-open>запросить портфолио</button>
+      </footer>
     </section>
     <section class="work">
       <h1>порядок работы</h1>
@@ -315,82 +332,87 @@
       </article>
     </section>
     <section class="job">
-      <h1>ЧТО МЫ ДЕЛАЕМ?</h1>
-      <div>arcticle*12>p></div>
+      <h1>Что мы делаем?</h1>
+      <arcticle><a href="">билинг</a></arcticle>
+      <arcticle><a href="">система аналитики</a></arcticle>
+      <arcticle><a href="">битрикс</a></arcticle>
+      <arcticle><a href="">социальные сети</a></arcticle>
+      <arcticle><a href="">скоринг</a></arcticle>
+      <arcticle><a href="">API</a></arcticle>
+      <arcticle><a href="">битрикс 24</a></arcticle>
+      <arcticle><a href="">корпоративные сайты</a></arcticle>
+      <arcticle><a href="">E-commerce</a></arcticle>
+      <arcticle><a href="">Интеграции</a></arcticle>
+      <arcticle><a href="">1с</a></arcticle>
+      <arcticle><a href="">скоринг</a></arcticle>
     </section>
     <section class="recieve">
       <h1>что получите</h1>
-      <ul>
-        <li>
-          <h2>Вы не будете терять клиентов</h2>
-          <p>
-            Дизайн сайта последовательно подталкивает пользователя к совершению целевого действия –
-            положить товар в корзину, отправить заявку, запросить прайс-лист, оставить контакт для
-            связи т.д.
-          </p>
-          <p>
-            Это увеличивает конверсию сайта, минимизирует расходы на привлечение клиентов,
-            способствует быстрой окупаемости рекламных компаний
-          </p>
-        </li>
-        <li>
-          <h2>Вам не придется платить за доработки</h2>
-          <p>Доработки вам не потребуются, т.к. вы получаете полностью готовый к работе сайт.</p>
-          <p>
-            Мы изготовим сайт «под ключ» , в том числе наполним его оригинальными текстами,
-            написанными профессиональным копирайтером с учетом поисковых запросов.
-          </p>
-          <p>Интегрируем платежные системы, подключим онлайн-кассы, CRM</p>
-        </li>
-        <li>
-          <h2></h2>
-          <p>
-            Стоимость сайта включает работу команды квалифицированных профессионалов: маркетолога,
-            копирайтера, дизайнера, верстальщика, программиста, руководителя проекта.
-          </p>
-          <p><span>Решим любую вашу задачу!</span></p>
-        </li>
-      </ul>
+      <div>
+        <h2>Вы не будете терять клиентов</h2>
+        <p>
+          Дизайн сайта последовательно подталкивает пользователя к совершению целевого действия –
+          положить товар в корзину, отправить заявку, запросить прайс-лист, оставить контакт для
+          связи т.д.
+        </p>
+        <p>
+          Это увеличивает конверсию сайта, минимизирует расходы на привлечение клиентов,
+          способствует быстрой окупаемости рекламных компаний
+        </p>
+      </div>
+      <div>
+        <h2>Вам не придется платить за доработки</h2>
+        <p>Доработки вам не потребуются, т.к. вы получаете полностью готовый к работе сайт.</p>
+        <p>
+          Мы изготовим сайт «под ключ» , в том числе наполним его оригинальными текстами,
+          написанными профессиональным копирайтером с учетом поисковых запросов.
+        </p>
+        <p>Интегрируем платежные системы, подключим онлайн-кассы, CRM</p>
+      </div>
+      <div>
+        <h2></h2>
+        <p>
+          Стоимость сайта включает работу команды квалифицированных профессионалов: маркетолога,
+          копирайтера, дизайнера, верстальщика, программиста, руководителя проекта.
+        </p>
+        <p><span>Решим любую вашу задачу!</span></p>
+      </div>
     </section>
     <footer class="cities">
-      <div class="moscow">
-        <h1>Москва</h1>
-        <ul>
-          <li>
-            <p>Адрес</p>
-            <a href="">Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11</a>
-          </li>
-          <li>
-            <p>Электронная почта</p>
-            <a href="">info@salemedia.org</a>
-          </li>
-        </ul>
+      <div class="town">
+        <span>Москва</span>
         <div>
-          <p>Телефон</p>
-          <ul>
-            <li><a href="">8 495 625 35 81</a></li>
-            <li><a href="">8 800 200 23 16</a></li>
-          </ul>
+          <span>Адрес</span>
+          <a href="">Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11</a>
+        </div>
+        <div>
+          <span>Электронная почта</span>
+          <a href="">info@salemedia.org</a>
+        </div>
+        <div>
+          <span>Телефон</span>
+          <div>
+            <a href="">8 495 625 35 81</a>
+            <a href="">8 800 200 23 16</a>
+          </div>
         </div>
       </div>
-      <div class="riga">
-        <h1>Рига</h1>
-        <ul>
-          <li>
-            <p>Адрес</p>
-            <a href="">Латвия, г. Рига, ул. Платич, д6, корп.1</a>
-          </li>
-          <li>
-            <p>Электронная почта</p>
-            <a href="">info@salemedia.org</a>
-          </li>
-        </ul>
+      <div class="town">
+        <span>Рига</span>
         <div>
-          <p>Телефон</p>
-          <ul>
-            <li><a href="">8 495 600 35 89</a></li>
-            <li><a href="">8 800 200 00 17</a></li>
-          </ul>
+          <span>Адрес</span>
+          <a href="">Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11</a>
+        </div>
+        <div>
+          <span>Электронная почта</span>
+          <a href="">info@salemedia.org</a>
+        </div>
+        <div>
+          <span>Телефон</span>
+          <div>
+            <a href="">8 495 600 35 89</a>
+            <a href="">8 800 200 00 17</a>
+          </div>
         </div>
       </div>
     </footer>
@@ -406,6 +428,17 @@
         </svg>
       </a>
       <p>Делаем сайты на 1С Битрикс</p>
+      <nav>
+        <ol>
+          <li><a href="">главная</a></li>
+          <li><a href="">услуги</a></li>
+          <li><a href="">1с битрикс</a></li>
+          <li><a href="">битрикс24</a></li>
+          <li><a href="">маркет</a></li>
+          <li><a href="">о нас</a></li>
+          <li><a href="">контакты</a></li>
+        </ol>
+      </nav>
       <ul class="header__list-icons">
         <li class="list-icons__item">
           <svg class="list-icons__icon" width="20" height="20">
@@ -441,47 +474,34 @@
       </form>
     </header>
     <section class="hero">
-      <h1>Создаем cайты, приносящие <span>прибыль</span></h1>
       <article>
+        <h2>Создаем cайты, приносящие <span>прибыль</span></h2>
         <p>Проанализируем потребности вашей <span>целевой аудитории</span></p>
-      </article>
-      <article>
         <p>Изучим <span>предложения</span> ваших конкурентов</p>
+        <p>Учтём особенности построения <span>бизнес-процессов</span> вашей компании</p>
+        <button type="button">заказать сайт</button>
       </article>
       <article>
+        <h2>Создаем cайты, приносящие <span>прибыль</span></h2>
+        <p>Проанализируем потребности вашей <span>целевой аудитории</span></p>
+        <p>Изучим <span>предложения</span> ваших конкурентов</p>
         <p>Учтём особенности построения <span>бизнес-процессов</span> вашей компании</p>
+        <button type="button">заказать сайт</button>
       </article>
-      <button type="button">заказать сайт</button>
+      <article>
+        <h2>Создаем cайты, приносящие <span>прибыль</span></h2>
+        <p>Проанализируем потребности вашей <span>целевой аудитории</span></p>
+        <p>Изучим <span>предложения</span> ваших конкурентов</p>
+        <p>Учтём особенности построения <span>бизнес-процессов</span> вашей компании</p>
+        <button type="button">заказать сайт</button>
+      </article>
     </section>
+    <aside>
+      <div>Остались вопросы?</div>
+      <p>Напишите нам, и мы вам обязательно поможем!</p>
+      <button type="button" data-popup-open>написать</button>
+    </aside>
     <footer>
-      <aside>
-        <h1>Остались вопросы?</h1>
-        <p>Напишите нам, и мы вам обязательно поможем!</p>
-        <ul>
-          <li>
-            <a href="">
-              <svg width="32" height="32">
-                <use href="./images/sprite.svg#icon-telegramm"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg width="32" height="32">
-                <use href="./images/sprite.svg#icon-mymir"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg width="32" height="32">
-                <use href="./images/sprite.svg#icon-watsapp"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <button type="button">НАПИСАТЬ</button>
-      </aside>
       <div>
         <a href="">
           <svg width="197" height="40">
@@ -503,34 +523,11 @@
         <li><a href="">Как повысить конверсию</a></li>
       </ul>
       <div>
-        <h2>Мы в социальных сетях:</h2>
-        <ul style="background-color: #333333">
-          <li>
-            <a href="">
-              <svg width="8" height="15">
-                <use href="./images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg width="17" height="10">
-                <use href="./images/sprite.svg#icon-wk"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg width="18" height="20">
-                <use href="./images/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div>Мы в социальных сетях:</div>
       </div>
     </footer>
     <aside>
-      <h1>Почему не стоит откладывать <span>создание сайта</span>?</h1>
+      <div>Почему не стоит откладывать <span>создание сайта</span>?</div>
       <p>
         <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт.</span> Поэтому не теряйте время!
         Пока вы раздумываете, ваши клиенты уходят к конкурентам.
@@ -542,5 +539,54 @@
         </svg>
       </button>
     </aside>
+    <!-- временный класс "mob-form" -->
+    <aside class="mob-form">
+      <a href=""> Whatsapp </a>
+      <a href="">позвонить</a>
+    </aside>
+    <div class="backdrop is-hidden" data-popup>
+      <div class="popup-1">
+        <button type="button" data-popup-close>
+          <svg width="8" height="8">
+            <use href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+        <p>Напишите нам и мы обязательно <span>поможем</span> вам!</p>
+        <div>
+          <p>Написать в <span>Telegram</span></p>
+        </div>
+        <div>
+          <p>Написать в <span>WhatsApp</span></p>
+        </div>
+        <div>
+          <p>Написать на <span>E-mail</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="popup-2">
+        <button type="button" data-modal-close>
+          <svg width="8" height="8">
+            <use href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+        <p><span>Куда</span> отправить портфолио?</p>
+        <div>
+          <p>Telegram</p>
+        </div>
+        <div>
+          <p>Whatsapp</p>
+        </div>
+        <div>
+          <p>E-mail</p>
+        </div>
+        <form>
+          <label for="text">Укажите имя аккаунта или номер телефона</label>
+          <input type="text" id="text" name="text" placeholder="имя аккаунта или номер телефона" />
+          <button type="submit">запросить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
