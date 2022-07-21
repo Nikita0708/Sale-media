@@ -1,0 +1,14 @@
+.recieve-wrap__title {
+  font-size: 22px;
+  line-height: 1.14;
+  color: var(--second-black-color);
+}
+.recieve-wrap__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--second-black-color);
+  & span {
+    font-weight: 700;
+    font-style: italic;
+  }
+}

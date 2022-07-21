@@ -1,0 +1,13 @@
+.facts__card {
+  & span {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.16;
+    color: var(--purple-color);
+  }
+}
+.facts__text {
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--black-color);
+}
