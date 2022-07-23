@@ -1,9 +1,23 @@
+.facts {
+  padding-bottom: 70px;
+}
+
+.facts__title {
+  margin-bottom: 23px;
+}
+.facts__wrap {
+  display: flex;
+}
 .facts__card {
   & span {
     font-weight: 700;
     font-size: 64px;
     line-height: 1.16;
     color: var(--purple-color);
+    margin-bottom: 5px;
+  }
+  &:not(:last-child) {
+    margin-right: 20px;
   }
 }
 .facts__text {

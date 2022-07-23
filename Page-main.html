@@ -16,596 +16,753 @@
     <title>Document</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <!-- <button type="button" class="mob-menu-open-btn">
+          <svg width="20" height="20">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button> -->
+        <div class="logo__wrap">
+          <a href="" class="header__logo">
+            <svg width="128" height="26">
+              <use href="./images/sprite.svg#icon-logoblack"></use>
+            </svg>
+          </a>
+          <p class="header__logo-text">Делаем сайты на 1С Битрикс</p>
+        </div>
+        <nav class="header__nav">
+          <ol class="header__list">
+            <li class="header__item"><a href="" class="header-link">главная</a></li>
+            <li class="header__item"><a href="" class="header-link">услуги</a></li>
+            <li class="header__item"><a href="" class="header-link">1с битрикс</a></li>
+            <li class="header__item"><a href="" class="header-link">битрикс24</a></li>
+            <li class="header__item"><a href="" class="header-link">маркет</a></li>
+            <li class="header__item"><a href="" class="header-link">о нас</a></li>
+            <li class="header__item"><a href="" class="header-link">контакты</a></li>
+          </ol>
+        </nav>
+        <a href="" class="header__tel">+7 495 128-8976</a>
+        <ul class="header__list-icons">
+          <li class="list-icons__item list-icons__item--first">
+            <svg class="list-icons__icon list-icons__icon--first" width="20" height="20">
+              <use href="./images/sprite.svg#icon-search"></use>
+            </svg>
+            <!-- <button type="button" class="header-form-close-btn">
+              <svg class="list-icons__icon" width="20" height="20">
+                <use href="./images/sprite.svg#icon-x"></use>
+              </svg>
+            </button> -->
+          </li>
+          <li class="list-icons__item">
+            <svg class="list-icons__icon" width="20" height="20">
+              <use href="./images/sprite.svg#icon-user"></use>
+            </svg>
+          </li>
+          <li class="list-icons__item">
+            <svg class="list-icons__icon" width="20" height="20">
+              <use href="./images/sprite.svg#icon-shopping-cart"></use>
+            </svg>
+          </li>
+          <!-- <li class="list-icons__item">
+            <svg class="list-icons__icon" width="20" height="20">
+              <use href="./images/sprite.svg#icon-call"></use>
+            </svg>
+          </li> -->
+        </ul>
+        <form class="header__form">
+          <input type="text" name="search" id="search" class="header-input" placeholder="Искать" />
+          <svg width="20" height="20">
+            <use href="./images/sprite.svg#icon-search"></use>
+          </svg>
+        </form>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <article class="hero__article hero__article--first slide active">
+          <div class="hero__title">Создаем cайты, приносящие <span>прибыль</span></div>
+          <div class="hero__text-wrap">
+            <div class="hero__text-thumb">
+              <p class="hero__text">
+                Проанализируем потребности вашей <span>целевой аудитории</span>
+              </p>
+            </div>
+            <div class="hero__text-thumb">
+              <p class="hero__text">Изучим <span>предложения</span> ваших конкурентов</p>
+            </div>
+            <div class="hero__text-thumb">
+              <p class="hero__text">
+                Учтём особенности построения <span>бизнес-процессов</span> вашей компании
+              </p>
+            </div>
+          </div>
+          <button type="button" class="hero-btn">заказать сайт</button>
+        </article>
+        <article class="hero__article hero__article--second slide">
+          <div class="hero__title">Создаем cайты, приносящие <span>прибыль</span></div>
+          <div class="hero__text-wrap">
+            <div class="hero__text-thumb">
+              <p class="hero__text">
+                Проанализируем потребности вашей <span>целевой аудитории</span>
+              </p>
+            </div>
+            <div class="hero__text-thumb">
+              <p class="hero__text">Изучим <span>предложения</span> ваших конкурентов</p>
+            </div>
+            <div class="hero__text-thumb">
+              <p class="hero__text">
+                Учтём особенности построения <span>бизнес-процессов</span> вашей компании
+              </p>
+            </div>
+          </div>
+          <button type="button" class="hero-btn">заказать сайт</button>
+        </article>
+        <article class="hero__article hero__article--third slide">
+          <div class="hero__title">Создаем cайты, приносящие <span>прибыль</span></div>
+          <div class="hero__text-wrap">
+            <div class="hero__text-thumb">
+              <p class="hero__text">
+                Проанализируем потребности вашей <span>целевой аудитории</span>
+              </p>
+            </div>
+            <div class="hero__text-thumb">
+              <p class="hero__text">Изучим <span>предложения</span> ваших конкурентов</p>
+            </div>
+            <div class="hero__text-thumb">
+              <p class="hero__text">
+                Учтём особенности построения <span>бизнес-процессов</span> вашей компании
+              </p>
+            </div>
+          </div>
+          <button type="button" class="hero-btn">заказать сайт</button>
+        </article>
+        <div id="btn-prev"></div>
+        <div id="btn-next"></div>
+        <div class="dots-wrapper">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
     <section class="preferences">
-      <h1 class="preferences__title">Крутой цепляющий заголовок</h1>
-      <article class="preferences__article">
-        <h2 class="preferences-article__title">Надежность</h2>
-        <p class="preferences__text">
-          Занимаемся созданием сайтов более 12 лет. Являемся «золотыми партнерами» 1СБитрикс и
-          участниками программы мониторинга качества внедрений.
-        </p>
-      </article>
-      <article class="preferences__article">
-        <h2 class="preferences-article__title">Удобство</h2>
-        <p class="preferences__text">
-          Не тратим ваше время на бесконечные обсуждения. Быстро вникаем в суть проекта и предлагаем
-          оптимальные решение. На связи 24/7.
-        </p>
-      </article>
-      <article class="preferences__article">
-        <h2 class="preferences-article__title">Прозрачность</h2>
-        <p class="preferences__text">
-          Показываем, из каких элементов складывается стоимость сайта, а также на каком этапе
-          разработки находимся.
-        </p>
-      </article>
-      <article class="preferences__article">
-        <h2 class="preferences-article__title">Безопасность</h2>
-        <p class="preferences__text">
-          В договоре четко прописываем все этапы работ над сайтом, их стоимость и сроки выполнения.
-        </p>
-      </article>
+      <div class="container">
+        <div class="preferences__thumb">
+          <h1 class="preferences__title">Крутой цепляющий заголовок</h1>
+          <div class="preferences__wrap">
+            <article class="preferences__article">
+              <h2 class="preferences-article__title">Надежность</h2>
+              <p class="preferences__text">
+                Занимаемся созданием сайтов более 12 лет. Являемся «золотыми партнерами» 1СБитрикс и
+                участниками программы мониторинга качества внедрений.
+              </p>
+            </article>
+            <article class="preferences__article">
+              <h2 class="preferences-article__title">Удобство</h2>
+              <p class="preferences__text">
+                Не тратим ваше время на бесконечные обсуждения. Быстро вникаем в суть проекта и
+                предлагаем оптимальные решение. На связи 24/7.
+              </p>
+            </article>
+            <article class="preferences__article">
+              <h2 class="preferences-article__title">Прозрачность</h2>
+              <p class="preferences__text">
+                Показываем, из каких элементов складывается стоимость сайта, а также на каком этапе
+                разработки находимся.
+              </p>
+            </article>
+            <article class="preferences__article">
+              <h2 class="preferences-article__title">Безопасность</h2>
+              <p class="preferences__text">
+                В договоре четко прописываем все этапы работ над сайтом, их стоимость и сроки
+                выполнения.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="services">
-      <h1 class="services__title title">услуги</h1>
-      <article class="services__article">
-        <img src="./images/services1.jpg" alt="service1" />
-        <footer class="services-article__footer">
-          <span><p>акция</p></span>
-        </footer>
-        <a href="" class="services-article__title">
-          <h2>Лэндинг страницы</h2>
-        </a>
-        <p class="services__text">
-          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-        </p>
-        <div class="read-more"></div>
-        <a href="" class="services__btn">подробнее</a>
-      </article>
-      <article class="services__article">
-        <header><p>Оптимальное предложение!</p></header>
-        <img src="./images/services2.jpg" alt="service2" />
-        <footer class="services-article__footer">
-          <span><p>-25%</p></span>
-          <div><p>Цена от 138 000 ₽</p></div>
-        </footer>
-        <a href="" class="services-article__title">
-          <h2>Поисковая оптимизация</h2>
-        </a>
-        <p class="services__text">
-          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-        </p>
-        <div class="read-more"></div>
-        <a href="" class="services__btn">подробнее</a>
-      </article>
-      <article class="services__article">
-        <img src="./images/services3.jpg" alt="service3" />
-        <a href="" class="services-article__title">
-          <h2>Маркетинг в социальных сетях</h2>
-        </a>
-        <p class="services__text">
-          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-        </p>
-        <div class="read-more"></div>
-        <a href="" class="services__btn">подробнее</a>
-      </article>
-      <article class="services__article">
-        <img src="./images/services4.jpg" alt="service4" />
-        <a href="" class="services-article__title">
-          <h2>Таргетированная реклама</h2>
-        </a>
-        <p class="services__text">
-          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-        </p>
-        <div class="read-more"></div>
-        <a href="" class="services__btn">подробнее</a>
-      </article>
-      <article class="services__article">
-        <img src="./images/services5.jpg" alt="service5" />
-        <a href="" class="services-article__title">
-          <h2>Интернет магазин</h2>
-        </a>
+      <div class="container">
+        <h1 class="services__title title">услуги</h1>
+        <div class="services__wrap">
+          <article class="services__article">
+            <img src="./images/services1.jpg" alt="service1" />
+            <footer class="services-article__footer">
+              <p class="sale"><span>акция</span></p>
+            </footer>
+            <div class="services-article__wrap">
+              <a href="" class="services-article__title">
+                <h2>Лэндинг страницы</h2>
+              </a>
+              <p class="services__text">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                сосредоточиться.
+              </p>
+              <div class="read-more"></div>
+              <a href="" class="services__btn">подробнее</a>
+            </div>
+          </article>
+          <article class="services__article">
+            <header><p>Оптимальное предложение!</p></header>
+            <img src="./images/services2.jpg" alt="service2" />
+            <footer class="services-article__footer">
+              <p class="sale"><span>-25%</span></p>
+              <div><p class="price">Цена от 138 000 ₽</p></div>
+            </footer>
+            <div class="services-article__wrap">
+              <a href="" class="services-article__title">
+                <h2>Поисковая оптимизация</h2>
+              </a>
+              <p class="services__text">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                сосредоточиться.
+              </p>
+              <div class="read-more"></div>
+              <a href="" class="services__btn">подробнее</a>
+            </div>
+          </article>
+          <article class="services__article">
+            <img src="./images/services3.jpg" alt="service3" />
+            <div class="services-article__wrap">
+              <a href="" class="services-article__title">
+                <h2>Маркетинг в социальных сетях</h2>
+              </a>
+              <p class="services__text">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                сосредоточиться.
+              </p>
+              <div class="read-more"></div>
+              <a href="" class="services__btn">подробнее</a>
+            </div>
+          </article>
+          <article class="services__article">
+            <img src="./images/services4.jpg" alt="service4" />
+            <div class="services-article__wrap">
+              <a href="" class="services-article__title">
+                <h2>Таргетированная реклама</h2>
+              </a>
+              <p class="services__text">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                сосредоточиться.
+              </p>
+              <div class="read-more"></div>
+              <a href="" class="services__btn">подробнее</a>
+            </div>
+          </article>
+          <article class="services__article">
+            <img src="./images/services5.jpg" alt="service5" />
+            <div class="services-article__wrap">
+              <a href="" class="services-article__title">
+                <h2>Интернет магазин</h2>
+              </a>
 
-        <p class="services__text">
-          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-        </p>
-        <div class="read-more"></div>
-        <a href="" class="services__btn">подробнее</a>
-      </article>
-      <article class="services__article">
-        <img src="./images/services6.jpg" alt="service6" />
-        <footer class="services-article__footer">
-          <span><p>акция</p></span>
+              <p class="services__text">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                сосредоточиться.
+              </p>
+              <div class="read-more"></div>
+              <a href="" class="services__btn">подробнее</a>
+            </div>
+          </article>
+          <article class="services__article">
+            <img src="./images/services6.jpg" alt="service6" />
+            <footer class="services-article__footer">
+              <p class="sale"><span>акция</span></p>
+            </footer>
+            <div class="services-article__wrap">
+              <a href="" class="services-article__title">
+                <h2>Мобильное приложение</h2>
+              </a>
+              <p class="services__text">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                сосредоточиться.
+              </p>
+              <div class="read-more"></div>
+              <a href="" class="services__btn">подробнее</a>
+            </div>
+          </article>
+        </div>
+        <footer class="services__footer">
+          <h2 class="services-footer__title">Заголовок про <span>кучу сервисов</span></h2>
+          <p class="services-footer__text">
+            <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт.</span>Поэтому не теряйте
+            время! Пока вы раздумываете, ваши клиенты уходят к конкурентам.
+          </p>
+          <a href="" class="services-footer__btn"><p>все услуги</p></a>
         </footer>
-        <a href="" class="services-article__title">
-          <h2>Мобильное приложение</h2>
-        </a>
-        <p class="services__text">
-          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-        </p>
-        <div class="read-more"></div>
-        <a href="" class="services__btn">подробнее</a>
-      </article>
-      <footer class="services__footer">
-        <h2 class="services-footer__title">Заголовок про <span>кучу сервисов</span></h2>
-        <p class="services-footer__text">
-          <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт.</span>Поэтому не теряйте
-          время! Пока вы раздумываете, ваши клиенты уходят к конкурентам.
-        </p>
-        <a href="" class="services-footer__btn"><p>все услуги</p></a>
-      </footer>
+      </div>
     </section>
     <section class="facts">
-      <h1 class="facts__title title">факты</h1>
-      <div class="facts__card">
-        <span>27</span>
-        <p class="facts__text">Cертифицированных сотрудников Битрикс</p>
-      </div>
-      <div class="facts__card">
-        <span>250+</span>
-        <p class="facts__text">Сертифицированных сотрудников Битрикс</p>
-      </div>
-      <div class="facts__card">
-        <span>140+</span>
-        <p class="facts__text">Сертифицированных сотрудников Битрикс</p>
-      </div>
-      <div class="facts__card">
-        <span>50</span>
-        <p class="facts__text">Сертифицированных сотрудников Битрикс</p>
+      <div class="container">
+        <h1 class="facts__title title">факты</h1>
+        <div class="facts__wrap">
+          <div class="facts__card">
+            <span>27</span>
+            <p class="facts__text">Cертифицированных сотрудников Битрикс</p>
+          </div>
+          <div class="facts__card">
+            <span>250+</span>
+            <p class="facts__text">Сертифицированных сотрудников Битрикс</p>
+          </div>
+          <div class="facts__card">
+            <span>140+</span>
+            <p class="facts__text">Сертифицированных сотрудников Битрикс</p>
+          </div>
+          <div class="facts__card">
+            <span>50</span>
+            <p class="facts__text">Сертифицированных сотрудников Битрикс</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="benefits">
-      <div>
+      <div class="container">
         <h1 class="benefits__title title">преимущества</h1>
-        <article class="benefits__article">
-          <svg width="30" height="30" class="benefits__check-svg">
-            <use href="./images/sprite.svg#icon-check-circle"></use>
-          </svg>
-          <div class="benefits-article__title">Опыт создания сайтов разных форматов</div>
-          <p class="benefits-article__text">
-            Среди наших проектов - интернет-магазины, интернет-порталы, корпоративные IT системы,
-            мобильные приложения
-          </p>
-        </article>
-        <article class="benefits__article">
-          <svg width="30" height="30" class="benefits__check-svg">
-            <use href="./images/sprite.svg#icon-check-circle"></use>
-          </svg>
-          <div class="benefits-article__title">
-            Начинаем разработку коммерческих проектов с маркетингового анализа
-          </div>
-          <p class="benefits-article__text">
-            Анализируем потребности вашей «Целевой Аудитории» и ваших конкурентов, чтобы создать
-            максимально выгодное предложение для ваших потенциальных клиентов
-          </p>
-        </article>
-        <article class="benefits__article">
-          <svg width="30" height="30" class="benefits__check-svg">
-            <use href="./images/sprite.svg#icon-check-circle"></use>
-          </svg>
-          <div class="benefits-article__title">Опыт работы над сложными проектами</div>
-          <p class="benefits-article__text">
-            Разрабатываем оригинальные решения для реализации нестандартных задач клиента
-          </p>
-        </article>
-        <article class="benefits__article">
-          <svg width="30" height="30" class="benefits__check-svg">
-            <use href="./images/sprite.svg#icon-check-circle"></use>
-          </svg>
-          <div class="benefits-article__title">Работаем с учетом бизнес-процессов</div>
-          <p class="benefits-article__text">
-            При разработке сайтов по продаже услуг или сложной продукции (например, промышленное
-            производство) учитываем особенности построения бизнес-процессов компании, что
-            увеличивает приток заказов онлайн
-          </p>
-        </article>
-        <article class="benefits__article">
-          <svg width="30" height="30" class="benefits__check-svg">
-            <use href="./images/sprite.svg#icon-check-circle"></use>
-          </svg>
-          <div class="benefits-article__title">
-            Проект от начала до его сдачи ведет персональный менеджер
-          </div>
-          <p class="benefits-article__text">
-            Менеджер проекта вникнет в суть вашей задачи, подберет оптимальное по цене и качеству
-            решение, оперативно решит все возникающие в процессе работы вопросы
-          </p>
-        </article>
-        <article class="benefits__article">
-          <svg width="30" height="30" class="benefits__check-svg">
-            <use href="./images/sprite.svg#icon-check-circle"></use>
-          </svg>
-          <div class="benefits-article__title">Реанимируем проекты на любой стадии</div>
-          <p class="benefits-article__text">
-            Если ваш подрядчик не справился с проектом, поможем доработать его «под ключ»
-          </p>
-        </article>
+        <div class="benefits__wrap">
+          <article class="benefits__article">
+            <div>
+              <div class="benefits-article__title">Опыт создания сайтов разных форматов</div>
+              <p class="benefits-article__text">
+                Среди наших проектов - интернет-магазины, интернет-порталы, корпоративные IT
+                системы, мобильные приложения
+              </p>
+            </div>
+          </article>
+          <article class="benefits__article">
+            <div>
+              <div class="benefits-article__title">
+                Начинаем разработку коммерческих проектов с маркетингового анализа
+              </div>
+              <p class="benefits-article__text">
+                Анализируем потребности вашей «Целевой Аудитории» и ваших конкурентов, чтобы создать
+                максимально выгодное предложение для ваших потенциальных клиентов
+              </p>
+            </div>
+          </article>
+          <article class="benefits__article">
+            <div>
+              <div class="benefits-article__title">Опыт работы над сложными проектами</div>
+              <p class="benefits-article__text">
+                Разрабатываем оригинальные решения для реализации нестандартных задач клиента
+              </p>
+            </div>
+          </article>
+          <article class="benefits__article">
+            <div>
+              <div class="benefits-article__title">Работаем с учетом бизнес-процессов</div>
+              <p class="benefits-article__text">
+                При разработке сайтов по продаже услуг или сложной продукции (например, промышленное
+                производство) учитываем особенности построения бизнес-процессов компании, что
+                увеличивает приток заказов онлайн
+              </p>
+            </div>
+          </article>
+          <article class="benefits__article">
+            <div>
+              <div class="benefits-article__title">
+                Проект от начала до его сдачи ведет персональный менеджер
+              </div>
+              <p class="benefits-article__text">
+                Менеджер проекта вникнет в суть вашей задачи, подберет оптимальное по цене и
+                качеству решение, оперативно решит все возникающие в процессе работы вопросы
+              </p>
+            </div>
+          </article>
+          <article class="benefits__article">
+            <div>
+              <div class="benefits-article__title">Реанимируем проекты на любой стадии</div>
+              <p class="benefits-article__text">
+                Если ваш подрядчик не справился с проектом, поможем доработать его «под ключ»
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
     <section class="clients">
-      <h1 class="clients__title title">клиенты</h1>
-      <div class="clients-wrap">
-        <div class="clients__card">
-          <img src="./images/mosc.svg" alt="" />
-        </div>
-        <div class="clients__card">
-          <img src="./images/gazprom.svg" alt="" />
-        </div>
-        <div class="clients__card">
-          <img src="./images/mos-kino.svg" alt="" />
-        </div>
-        <div class="clients__card">
-          <img src="./images/rospatriot.svg" alt="" />
-        </div>
-        <div class="clients__card">
-          <img src="./images/front.svg" alt="" />
-        </div>
-        <div class="clients__card">
-          <img src="./images/obi.svg" alt="" />
-        </div>
-        <div class="clients__card">
-          <img src="./images/doshik.svg" alt="" />
+      <div class="container">
+        <h1 class="clients__title title">клиенты</h1>
+        <div class="clients-wrap">
+          <div class="clients__card clients__card--first">
+            <img src="./images/mosc.svg" alt="" />
+          </div>
+          <div class="clients__card clients__card--second">
+            <img src="./images/gazprom.svg" alt="" />
+          </div>
+          <div class="clients__card clients__card--third">
+            <img src="./images/mos-kino.svg" alt="" />
+          </div>
+          <div class="clients__card clients__card--fourth">
+            <img src="./images/rospatriot.svg" alt="" />
+          </div>
+          <div class="clients__card clients__card--fifth">
+            <img src="./images/front.svg" alt="" />
+          </div>
+          <div class="clients__card clients__card--sixth">
+            <img src="./images/obi.svg" alt="" />
+          </div>
+          <div class="clients__card clients__card--seventh">
+            <img src="./images/doshik.svg" alt="" />
+          </div>
         </div>
       </div>
     </section>
     <section class="portfolio">
-      <h1 class="portfolio__title title">портфолио</h1>
-      <article class="portfolio__article">
-        <img src="./images/port1.jpg" alt="" />
-        <p class="portfolio-article__text">Nunc ullamcorper, justo ac pretium</p>
-        <a href="" class="portfolio-article__btn"><p>cмотреть</p></a>
-      </article>
-      <article class="portfolio__article">
-        <img src="./images/port2.jpg" alt="" />
-        <p class="portfolio-article__text">Nunc justo ac pretium</p>
-        <a href="" class="portfolio-article__btn"><p>cмотреть</p></a>
-      </article>
-      <footer class="portfolio__footer">
-        <div class="portfolio-footer__title">Заголовок про <span>запрос портфолио</span></div>
-        <p class="portfolio-footer__text">
-          <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт.</span> Поэтому не теряйте
-          время! Пока вы раздумываете, ваши клиенты уходят к конкурентам.
-        </p>
-        <button type="button" data-modal-open class="portfolio-footer__btn">
-          запросить портфолио
-        </button>
-      </footer>
+      <div class="container">
+        <h1 class="portfolio__title title">портфолио</h1>
+        <div class="portfolio__wrap">
+          <article class="portfolio__article">
+            <img src="./images/port1.jpg" alt="" />
+            <p class="portfolio-article__text">Nunc ullamcorper, justo ac pretium</p>
+            <div>
+              <a href="" class="portfolio-article__btn portfolio-article__btn--text">cмотреть</a>
+            </div>
+          </article>
+          <article class="portfolio__article">
+            <img src="./images/port2.jpg" alt="" />
+            <p class="portfolio-article__text">Nunc justo ac pretium</p>
+            <div>
+              <a href="" class="portfolio-article__btn portfolio-article__btn--text">cмотреть</a>
+            </div>
+          </article>
+        </div>
+        <footer class="portfolio__footer">
+          <div class="portfolio-footer__title">Заголовок про <span>запрос портфолио</span></div>
+          <p class="portfolio-footer__text">
+            <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт.</span> Поэтому не теряйте
+            время! Пока вы раздумываете, ваши клиенты уходят к конкурентам.
+          </p>
+          <button type="button" data-modal-open class="portfolio-footer__btn">
+            запросить портфолио
+          </button>
+        </footer>
+      </div>
     </section>
     <section class="work">
-      <h1 class="work__title title">порядок работы</h1>
-      <article class="work__article">
-        <svg width="15" height="45" class="work__number">
-          <use href="./images/sprite.svg#icon-1"></use>
-        </svg>
-        <svg width="30" height="30" class="work__check">
-          <use href="./images/sprite.svg#icon-check-circle"></use>
-        </svg>
-        <p class="work__text">
-          Среди наших проектов - интернет-магазины, <span>интернет-порталы</span>, корпоративные IT
-          системы, мобильные приложения
-        </p>
-      </article>
-      <article class="work__article">
-        <svg width="33" height="45" class="work__number">
-          <use href="./images/sprite.svg#icon-2"></use>
-        </svg>
-        <svg width="30" height="30" class="work__check">
-          <use href="./images/sprite.svg#icon-check-circle"></use>
-        </svg>
-        <p class="work__text">
-          Среди наших проектов - интернет-магазины, интернет-порталы,<span> корпоративные</span>
-        </p>
-      </article>
-      <article class="work__article">
-        <svg width="32" height="45" class="work__number">
-          <use href="./images/sprite.svg#icon-3"></use>
-        </svg>
-        <svg width="30" height="30" class="work__check">
-          <use href="./images/sprite.svg#icon-check-circle"></use>
-        </svg>
-        <p class="work__text">
-          Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь
-          шутки,<span> скрытой в середине абзаца</span>
-        </p>
-      </article>
-      <article class="work__article">
-        <svg width="39" height="45" class="work__number">
-          <use href="./images/sprite.svg#icon-4"></use>
-        </svg>
-        <svg width="30" height="30" class="work__check">
-          <use href="./images/sprite.svg#icon-check-circle"></use>
-        </svg>
-        <p class="work__text">
-          Если вам нужен Lorem Ipsum для <span>серьёзного проекта</span>, вы наверняка не хотите
-          какой-нибудь шутки
-        </p>
-      </article>
-      <article class="work__article">
-        <svg width="32" height="45" class="work__number">
-          <use href="./images/sprite.svg#icon-5"></use>
-        </svg>
-        <svg width="30" height="30" class="work__check">
-          <use href="./images/sprite.svg#icon-check-circle"></use>
-        </svg>
-        <p class="work__text">
-          Если вам нужен Lorem Ipsum для серьёзного проекта, вы <span>наверняка</span> не хотите
-        </p>
-      </article>
-      <article class="work__article">
-        <svg width="34" height="45" class="work__number">
-          <use href="./images/sprite.svg#icon-6"></use>
-        </svg>
-        <svg width="30" height="30" class="work__check">
-          <use href="./images/sprite.svg#icon-check-circle"></use>
-        </svg>
-        <p class="work__text">
-          Среди наших проектов - интернет-магазины, <span>интернет-порталы</span>, корпоративные IT
-          системы, мобильные приложения
-        </p>
-      </article>
+      <div class="container">
+        <h1 class="work__title title">порядок работы</h1>
+        <div class="work__wrap">
+          <article class="work__article">
+            <svg width="15" height="45" class="work__number">
+              <use href="./images/sprite.svg#icon-1"></use>
+            </svg>
+            <div>
+              <svg width="30" height="30" class="work__check">
+                <use href="./images/sprite.svg#icon-check-circle"></use>
+              </svg>
+              <p class="work__text">
+                Среди наших проектов - интернет-магазины, <span>интернет-порталы</span>,
+                корпоративные IT системы, мобильные приложения
+              </p>
+            </div>
+          </article>
+          <article class="work__article">
+            <svg width="33" height="45" class="work__number">
+              <use href="./images/sprite.svg#icon-2"></use>
+            </svg>
+            <div>
+              <svg width="30" height="30" class="work__check">
+                <use href="./images/sprite.svg#icon-check-circle"></use>
+              </svg>
+              <p class="work__text">
+                Среди наших проектов - интернет-магазины, интернет-порталы,<span>
+                  корпоративные</span
+                >
+              </p>
+            </div>
+          </article>
+          <article class="work__article">
+            <svg width="32" height="45" class="work__number">
+              <use href="./images/sprite.svg#icon-3"></use>
+            </svg>
+            <div>
+              <svg width="30" height="30" class="work__check">
+                <use href="./images/sprite.svg#icon-check-circle"></use>
+              </svg>
+              <p class="work__text">
+                Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
+                какой-нибудь шутки,<span> скрытой в середине абзаца</span>
+              </p>
+            </div>
+          </article>
+          <article class="work__article">
+            <svg width="39" height="45" class="work__number">
+              <use href="./images/sprite.svg#icon-4"></use>
+            </svg>
+            <div>
+              <svg width="30" height="30" class="work__check">
+                <use href="./images/sprite.svg#icon-check-circle"></use>
+              </svg>
+              <p class="work__text">
+                Если вам нужен Lorem Ipsum для <span>серьёзного проекта</span>, вы наверняка не
+                хотите какой-нибудь шутки
+              </p>
+            </div>
+          </article>
+          <article class="work__article">
+            <svg width="32" height="45" class="work__number">
+              <use href="./images/sprite.svg#icon-5"></use>
+            </svg>
+            <div>
+              <svg width="30" height="30" class="work__check">
+                <use href="./images/sprite.svg#icon-check-circle"></use>
+              </svg>
+              <p class="work__text">
+                Если вам нужен Lorem Ipsum для серьёзного проекта, вы <span>наверняка</span> не
+                хотите
+              </p>
+            </div>
+          </article>
+          <article class="work__article">
+            <svg width="34" height="45" class="work__number">
+              <use href="./images/sprite.svg#icon-6"></use>
+            </svg>
+            <div>
+              <svg width="30" height="30" class="work__check">
+                <use href="./images/sprite.svg#icon-check-circle"></use>
+              </svg>
+              <p class="work__text">
+                Среди наших проектов - интернет-магазины, <span>интернет-порталы</span>,
+                корпоративные IT системы, мобильные приложения
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
     <section class="job">
-      <h1 class="job__title title">Что мы делаем?</h1>
-      <arcticle class="job__article"><a href="" class="job__link">билинг</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">система аналитики</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">битрикс</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">социальные сети</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">скоринг</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">API</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">битрикс 24</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">корпоративные сайты</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">E-commerce</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">Интеграции</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">1с</a></arcticle>
-      <arcticle class="job__article"><a href="" class="job__link">скоринг</a></arcticle>
+      <div class="container">
+        <h1 class="job__title title">Что мы делаем?</h1>
+        <div class="job__wrap">
+          <article class="job__article"><a href="" class="job__link">билинг</a></article>
+          <article class="job__article"><a href="" class="job__link">система аналитики</a></article>
+          <article class="job__article"><a href="" class="job__link">битрикс</a></article>
+          <article class="job__article"><a href="" class="job__link">социальные сети</a></article>
+          <article class="job__article"><a href="" class="job__link">скоринг</a></article>
+          <article class="job__article"><a href="" class="job__link">API</a></article>
+          <article class="job__article"><a href="" class="job__link">битрикс 24</a></article>
+          <article class="job__article">
+            <a href="" class="job__link">корпоративные сайты</a>
+          </article>
+          <article class="job__article"><a href="" class="job__link">E-commerce</a></article>
+          <article class="job__article"><a href="" class="job__link">Интеграции</a></article>
+          <article class="job__article"><a href="" class="job__link">1с</a></article>
+          <article class="job__article"><a href="" class="job__link">скоринг</a></article>
+        </div>
+      </div>
     </section>
     <section class="recieve">
-      <h1 class="recieve__title title">что получите</h1>
-      <div class="recieve__wrap">
-        <h2 class="recieve-wrap__title">Вы не будете терять клиентов</h2>
-        <p class="recieve-wrap__text">
-          Дизайн сайта последовательно подталкивает пользователя к
-          <span>совершению целевого действия</span> – положить товар в корзину, отправить заявку,
-          запросить прайс-лист, оставить контакт для связи т.д.
-        </p>
-        <p class="recieve-wrap__text">
-          Это увеличивает конверсию сайта,<span> минимизирует</span> расходы на привлечение
-          клиентов, способствует быстрой окупаемости рекламных компаний
-        </p>
-      </div>
-      <div class="recieve__wrap">
-        <h2 class="recieve-wrap__title">Вам не придется платить за доработки</h2>
-        <p class="recieve-wrap__text">
-          Доработки вам не потребуются, т.к. вы получаете полностью готовый к работе сайт.
-        </p>
-        <p class="recieve-wrap__text">
-          <span>Мы изготовим сайт «под ключ»</span> , в том числе наполним его оригинальными
-          текстами, написанными профессиональным копирайтером с учетом поисковых запросов.
-        </p>
-        <p class="recieve-wrap__text">Интегрируем платежные системы, подключим онлайн-кассы, CRM</p>
-      </div>
-      <div class="recieve__wrap">
-        <h2 class="recieve-wrap__title">Вы получаете оптимальное по цене и качеству решение</h2>
-        <p class="recieve-wrap__text">
-          Стоимость сайта включает работу команды квалифицированных профессионалов: маркетолога,
-          копирайтера, дизайнера, верстальщика, программиста, руководителя проекта.
-        </p>
-        <p class="recieve-wrap__text"><span>Решим любую вашу задачу!</span></p>
+      <div class="container">
+        <h1 class="recieve__title title">что получите</h1>
+        <div class="recieve__thumb">
+          <div class="recieve__wrap">
+            <h2 class="recieve-wrap__title">Вы не будете терять клиентов</h2>
+            <p class="recieve-wrap__text recieve-wrap__text--first">
+              Дизайн сайта последовательно подталкивает пользователя к
+              <span>совершению целевого действия</span> – положить товар в корзину, отправить
+              заявку, запросить прайс-лист, оставить контакт для связи т.д.
+            </p>
+            <p class="recieve-wrap__text">
+              Это увеличивает конверсию сайта,<span> минимизирует</span> расходы на привлечение
+              клиентов, способствует быстрой окупаемости рекламных компаний
+            </p>
+          </div>
+          <div class="recieve__wrap">
+            <h2 class="recieve-wrap__title">Вам не придется платить за доработки</h2>
+            <p class="recieve-wrap__text recieve-wrap__text--first">
+              Доработки вам не потребуются, т.к. вы получаете полностью готовый к работе сайт.
+            </p>
+            <p class="recieve-wrap__text recieve-wrap__text--second">
+              <span>Мы изготовим сайт «под ключ»</span> , в том числе наполним его оригинальными
+              текстами, написанными профессиональным копирайтером с учетом поисковых запросов.
+            </p>
+            <p class="recieve-wrap__text">
+              Интегрируем платежные системы, подключим онлайн-кассы, CRM
+            </p>
+          </div>
+          <div class="recieve__wrap">
+            <h2 class="recieve-wrap__title">Вы получаете оптимальное по цене и качеству решение</h2>
+            <p class="recieve-wrap__text recieve-wrap__text--first">
+              Стоимость сайта включает работу команды квалифицированных профессионалов: маркетолога,
+              копирайтера, дизайнера, верстальщика, программиста, руководителя проекта.
+            </p>
+            <p class="recieve-wrap__text"><span>Решим любую вашу задачу!</span></p>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="cities">
-      <div class="town">
-        <span class="city">Москва</span>
-        <div class="adress__wrap">
-          <span class="address__text">Адрес</span>
-          <a href="" class="address">Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11</a>
-        </div>
-        <div class="email__wrap">
-          <span class="email__text">Электронная почта</span>
-          <a href="" class="email">info@salemedia.org</a>
-        </div>
-        <div class="tel__wrap">
-          <span class="tel-text">Телефон</span>
-          <div>
-            <a href="" class="tel">8 495 625 35 81</a>
-            <a href="" class="tel">8 800 200 23 16</a>
+      <div class="container">
+        <div class="town">
+          <span class="city">Москва</span>
+          <div class="cities__thumb">
+            <div>
+              <div class="adress__wrap">
+                <span class="cities__text">Адрес</span>
+                <a href="" class="cities__info">
+                  Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11
+                </a>
+              </div>
+              <div class="email__wrap">
+                <span class="cities__text">Электронная почта</span>
+                <a href="" class="cities__info">info@salemedia.org</a>
+              </div>
+            </div>
+            <div class="tel__wrap">
+              <span class="cities__text">Телефон</span>
+              <div>
+                <a href="" class="cities__info">8 495 625 35 81</a>
+                <a href="" class="cities__info">8 800 200 23 16</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="town">
-        <span class="city">Рига</span>
-        <div class="adress__wrap">
-          <span class="address__text">Адрес</span>
-          <a href="" class="address">Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11</a>
-        </div>
-        <div class="email__wrap">
-          <span class="email__text">Электронная почта</span>
-          <a href="" class="email">info@salemedia.org</a>
-        </div>
-        <div class="tel__wrap">
-          <span class="tel-text">Телефон</span>
-          <div>
-            <a href="" class="tel">8 495 600 35 89</a>
-            <a href="" class="tel">8 800 200 00 17</a>
+        <div class="town">
+          <span class="city">Рига</span>
+          <div class="cities__thumb">
+            <div>
+              <div class="adress__wrap">
+                <span class="cities__text">Адрес</span>
+                <a href="" class="cities__info">
+                  Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11
+                </a>
+              </div>
+              <div class="email__wrap">
+                <span class="cities__text">Электронная почта</span>
+                <a href="" class="cities__info">info@salemedia.org</a>
+              </div>
+            </div>
+            <div class="tel__wrap">
+              <span class="cities__text">Телефон</span>
+              <div>
+                <a href="" class="cities__info">8 495 600 35 89</a>
+                <a href="" class="cities__info">8 800 200 00 17</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-    <header class="header">
-      <button type="button" class="mob-menu-open-btn">
-        <svg width="20" height="20">
-          <use href="./images/sprite.svg#icon-menu"></use>
-        </svg>
-      </button>
-      <a href="" class="header__logo">
-        <svg width="150" height="38">
-          <use href="./images/sprite.svg#icon-logoblack"></use>
-        </svg>
-      </a>
-      <p class="header__logo-text">Делаем сайты на 1С Битрикс</p>
-      <nav class="header__nav">
-        <ol class="header__nav">
-          <li class="header__item"><a href="" class="header-link">главная</a></li>
-          <li class="header__item"><a href="" class="header-link">услуги</a></li>
-          <li class="header__item"><a href="" class="header-link">1с битрикс</a></li>
-          <li class="header__item"><a href="" class="header-link">битрикс24</a></li>
-          <li class="header__item"><a href="" class="header-link">маркет</a></li>
-          <li class="header__item"><a href="" class="header-link">о нас</a></li>
-          <li class="header__item"><a href="" class="header-link">контакты</a></li>
-        </ol>
-      </nav>
-      <ul class="header__list-icons">
-        <li class="list-icons__item">
-          <svg class="list-icons__icon" width="20" height="20">
-            <use href="./images/sprite.svg#icon-search"></use>
-          </svg>
-          <button type="button" class="header-form-close-btn">
-            <svg class="list-icons__icon" width="20" height="20">
-              <use href="./images/sprite.svg#icon-x"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="list-icons__item">
-          <svg class="list-icons__icon" width="20" height="20">
-            <use href="./images/sprite.svg#icon-user"></use>
-          </svg>
-        </li>
-        <li class="list-icons__item">
-          <svg class="list-icons__icon" width="20" height="20">
-            <use href="./images/sprite.svg#icon-shopping-cart"></use>
-          </svg>
-        </li>
-        <li class="list-icons__item">
-          <svg class="list-icons__icon" width="20" height="20">
-            <use href="./images/sprite.svg#icon-call"></use>
-          </svg>
-        </li>
-      </ul>
-      <form class="header__form">
-        <input type="text" name="search" id="search" class="header-input" />
-        <svg width="20" height="20">
-          <use href="./images/sprite.svg#icon-search"></use>
-        </svg>
-      </form>
-    </header>
-    <section class="hero">
-      <article class="hero__article">
-        <div class="hero__title">Создаем cайты, приносящие <span>прибыль</span></div>
-        <p class="hero__text">Проанализируем потребности вашей <span>целевой аудитории</span></p>
-        <p class="hero__text">Изучим <span>предложения</span> ваших конкурентов</p>
-        <p class="hero__text">
-          Учтём особенности построения <span>бизнес-процессов</span> вашей компании
-        </p>
-        <button type="button" class="hero-btn">заказать сайт</button>
-      </article>
-      <article class="hero__article">
-        <div class="hero__title">Создаем cайты, приносящие <span>прибыль</span></div>
-        <p class="hero__text">Проанализируем потребности вашей <span>целевой аудитории</span></p>
-        <p class="hero__text">Изучим <span>предложения</span> ваших конкурентов</p>
-        <p class="hero__text">
-          Учтём особенности построения <span>бизнес-процессов</span> вашей компании
-        </p>
-        <button type="button" class="hero-btn">заказать сайт</button>
-      </article>
-      <article class="hero__article">
-        <div class="hero__title">Создаем cайты, приносящие <span>прибыль</span></div>
-        <p class="hero__text">Проанализируем потребности вашей <span>целевой аудитории</span></p>
-        <p class="hero__text">Изучим <span>предложения</span> ваших конкурентов</p>
-        <p class="hero__text">
-          Учтём особенности построения <span>бизнес-процессов</span> вашей компании
-        </p>
-        <button type="button" class="hero-btn">заказать сайт</button>
-      </article>
-    </section>
     <aside class="questions">
-      <div class="questions__title">Остались вопросы?</div>
-      <p class="questions__text">Напишите нам, и мы вам обязательно поможем!</p>
-      <button type="button" data-popup-open class="questions__btn">написать</button>
+      <div class="container">
+        <div class="questions__title">Остались вопросы?</div>
+        <p class="questions__text"><span>Напишите нам</span>, и мы вам обязательно поможем!</p>
+        <div class="questions__soc-wrap">
+          <a href="" class="questions__soc-link"></a>
+          <a href="" class="questions__soc-link"></a>
+          <a href="" class="questions__soc-link"></a>
+        </div>
+        <button type="button" data-popup-open class="questions__btn">написать</button>
+      </div>
     </aside>
     <footer class="footer">
-      <div class="footer-logo__wrap">
-        <a href="" class="footer__logo">
-          <svg width="197" height="40">
-            <use href="./images/sprite.svg#icon-logowhite"></use>
-          </svg>
-        </a>
-        <p class="footer_copy">© 2021 Sale Media LLC. Все права защищены.</p>
+      <div class="container">
+        <div class="footer-logo__wrap">
+          <a href="" class="footer__logo">
+            <svg width="197" height="40">
+              <use href="./images/sprite.svg#icon-logowhite"></use>
+            </svg>
+          </a>
+          <p class="footer_copy">© 2021 Sale Media LLC. Все права защищены.</p>
+        </div>
+        <div class="footer-list__wrap">
+          <div class="footer-list__title">Интересно почитать:</div>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">Как повысить конверсию</a></li>
+            <li class="footer__item"><a href="">9 инструментовки в для повышения продаж</a></li>
+            <li class="footer__item"><a href="">20 способовов привлечь клиента</a></li>
+            <li class="footer__item"><a href="">Как повысить конверсию</a></li>
+            <li class="footer__item"><a href="">9 инструментовки в для повышения продаж</a></li>
+          </ul>
+        </div>
+        <div class="footer__soc-thumb">
+          <div class="footer__soc-text">Мы в социальных сетях:</div>
+          <div class="footer__soc-wrap">
+            <a href="" class="footer__soc-link"></a>
+            <a href="" class="footer__soc-link"></a>
+            <a href="" class="footer__soc-link"></a>
+          </div>
+        </div>
       </div>
-      <div class="footer-list__wrap">
-        <h2 class="footer-list__title">Интересно почитать:</h2>
-        <ul>
-          <li class="footer__item"><a href="">Как повысить конверсию</a></li>
-          <li class="footer__item"><a href="">20 способовов привлечь клиента</a></li>
-          <li class="footer__item"><a href="">9 инструментовки в для повышения продаж</a></li>
-        </ul>
-      </div>
-      <ul class="footer__list">
-        <li class="footer__item"><a href="">9 инструментовки в для повышения продаж</a></li>
-        <li class="footer__item"><a href="">Как повысить конверсию</a></li>
-      </ul>
-      <div>Мы в социальных сетях:</div>
     </footer>
     <aside class="why">
-      <div class="why__title">Почему не стоит откладывать <span>создание сайта</span>?</div>
-      <p class="why__text">
-        <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт.</span> Поэтому не теряйте время!
-        Пока вы раздумываете, ваши клиенты уходят к конкурентам.
-      </p>
-      <button type="button" class="why__btn">заказать САЙТ</button>
-      <button type="button" class="why__btn-close">
-        <svg width="10" height="10">
-          <use href="./images/sprite.svg#icon-x"></use>
-        </svg>
-      </button>
-    </aside>
-    <!-- временный класс "mob-form" -->
-    <aside class="mob-form">
-      <a href="" class="mob-form__link"> Whatsapp </a>
-      <a href="" class="mob-form__link">позвонить</a>
-    </aside>
-    <div class="backdrop is-hidden" data-popup>
-      <div class="popup-1">
-        <button type="button" class="popup__btn-close" data-popup-close>
-          <svg width="8" height="8">
+      <div class="container">
+        <div class="why__title">Почему не стоит откладывать <span>создание сайта</span>?</div>
+        <p class="why__text">
+          <span>Но мы знаем, что раз вы здесь, то вам уже нужен сайт. </span> Поэтому не теряйте
+          время! Пока вы раздумываете, ваши клиенты уходят к конкурентам.
+        </p>
+        <button type="button" class="why__btn">заказать сайт</button>
+        <button type="button" class="why__btn-close">
+          <svg width="10" height="10">
             <use href="./images/sprite.svg#icon-x"></use>
           </svg>
         </button>
-        <p class="popup-1__title">Напишите нам и мы обязательно <span>поможем</span> вам!</p>
-        <div>
-          <p>Написать в <span>Telegram</span></p>
+      </div>
+    </aside>
+    <!-- временный класс "mob-form" -->
+    <!-- <aside class="mob-form">
+      <a href="" class="mob-form__link"> Whatsapp </a>
+      <a href="" class="mob-form__link">позвонить</a>
+    </aside> -->
+    <div class="backdrop is-hidden" data-popup>
+      <div class="popup-1">
+        <button type="button" class="popup__btn-close" data-popup-close>
+          <svg width="8" height="8" class="popup__icon">
+            <use href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+        <p class="popup1__title">Напишите нам и мы обязательно <span>поможем</span> вам!</p>
+        <div class="popup1__wrap">
+          <a href="" class="popup1__link popup1__link--first">
+            Написать в <span> Telegram</span>
+          </a>
         </div>
-        <div>
-          <p>Написать в <span>WhatsApp</span></p>
+        <div class="popup1__wrap">
+          <a href="" class="popup1__link popup1__link--second">
+            Написать в <span> WhatsApp</span>
+          </a>
         </div>
-        <div>
-          <p>Написать на <span>E-mail</span></p>
+        <div class="popup1__wrap">
+          <a href="" class="popup1__link popup1__link--third"> Написать на <span>E-mail</span> </a>
         </div>
       </div>
     </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="popup-2">
-        <button type="button" data-modal-close>
-          <svg width="8" height="8">
+        <button type="button" data-modal-close class="popup__btn-close">
+          <svg width="8" height="8" class="popup__icon">
             <use href="./images/sprite.svg#icon-x"></use>
           </svg>
         </button>
-        <p class="popup-2__title"><span>Куда</span> отправить портфолио?</p>
-        <div>
-          <p>Telegram</p>
+        <p class="popup2__title"><span>Куда</span> отправить портфолио?</p>
+        <div class="popup__wrap">
+          <div class="popup2__wrap">
+            <p class="popup2__text popup2__text--first">Telegram</p>
+          </div>
+          <div class="popup2__wrap">
+            <p class="popup2__text popup2__text--second">Whatsapp</p>
+          </div>
+          <div class="popup2__wrap">
+            <p class="popup2__text popup2__text--third">E-mail</p>
+          </div>
         </div>
-        <div>
-          <p>Whatsapp</p>
-        </div>
-        <div>
-          <p>E-mail</p>
-        </div>
-        <form>
-          <label for="text">Укажите имя аккаунта или номер телефона</label>
-          <input type="text" id="text" name="text" placeholder="имя аккаунта или номер телефона" />
-          <button type="submit">запросить</button>
+        <form class="popup2__form">
+          <label for="text" class="popup2__label"> Укажите имя аккаунта или номер телефона </label>
+          <input
+            type="text"
+            id="text"
+            class="popup2__input"
+            name="text"
+            placeholder="имя аккаунта или номер телефона"
+          />
+          <button type="submit" class="popup2__submit">запросить</button>
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

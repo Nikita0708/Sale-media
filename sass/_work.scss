@@ -1,4 +1,8 @@
+.work {
+  padding-bottom: 80px;
+}
 .work__text {
+  width: 270px;
   font-size: 14px;
   line-height: 1.43;
   color: var(--second-black-color);
@@ -6,4 +10,24 @@
     font-weight: 700;
     font-style: italic;
   }
+}
+.work__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.work__article {
+  display: flex;
+  justify-content: space-around;
+  width: 380px;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+.work__number {
+  margin-top: 10px;
+}
+.work__check {
+  margin-bottom: 7px;
 }

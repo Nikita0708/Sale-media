@@ -1,11 +1,35 @@
+.benefits {
+  padding-bottom: 90px;
+}
+.benefits__title {
+  margin-bottom: 115px;
+}
+.benefits__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 62px;
+  grid-column-gap: 65px;
+}
 .benefits-article__title {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.14;
   color: var(--second-black-color);
+  margin-bottom: 14px;
 }
 .benefits-article__text {
   font-size: 12px;
   line-height: 1.67;
   color: var(--second-black-color);
+}
+.benefits__article {
+  display: flex;
+  & div {
+    width: 310px;
+  }
+}
+.benefits__article::before {
+  content: url('../images/check-circle.svg');
+  margin-right: 10px;
+  margin-top: 10px;
 }

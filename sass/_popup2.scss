@@ -1,0 +1,103 @@
+.popup-2 {
+  width: 478px;
+  padding: 40px 40px 50px 40px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 20px 20px;
+}
+.popup__wrap {
+  display: flex;
+  margin-bottom: 20px;
+}
+.popup2__wrap {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 121px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+  &:hover {
+    outline: 1px solid var(--purple-color);
+    & .popup2__text {
+      color: var(--purple-color);
+    }
+  }
+}
+.popup2__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.14;
+  color: var(--second-black-color);
+  margin-bottom: 42px;
+  & span {
+    color: var(--purple-color);
+  }
+}
+.popup2__text {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--black-color);
+}
+.popup2__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--second-black-color);
+  margin-bottom: 5px;
+}
+.popup2__input {
+  width: 398px;
+  height: 40px;
+  padding-left: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.75;
+    color: #b3b3b3;
+  }
+}
+.popup2__submit {
+  width: 180px;
+  height: 40px;
+  background-color: var(--purple-color);
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.popup2__text--second::before {
+  content: url('../images/watsapp24.svg');
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+.popup2__text--first::before {
+  content: url('../images/telegramm24.svg');
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+.popup2__text--third::before {
+  content: url('../images/mail24.svg');
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}

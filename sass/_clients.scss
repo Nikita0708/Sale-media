@@ -1,4 +1,39 @@
+.clients {
+  padding-top: 80px;
+  padding-bottom: 83px;
+}
+.clients__title {
+  margin-bottom: 30px;
+}
 .clients-wrap {
   display: flex;
   align-items: center;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  padding: 20px 28px 20px 20px;
+}
+.clients__card--first {
+  padding-right: 20px;
+  border-right: 1px solid #e1e1e1;
+}
+.clients__card--second,
+.clients__card--third,
+.clients__card--fourth,
+.clients__card--fifth {
+  padding-left: 19px;
+  padding-right: 19px;
+  border-right: 1px solid #e1e1e1;
+}
+.clients__card--sixth {
+  padding-left: 19px;
+  padding-right: 18px;
+  border-right: 1px solid #e1e1e1;
+}
+.clients__card--seventh {
+  padding-left: 27px;
+}
+.clients__card {
+  display: flex;
+  align-items: center;
+  height: 110px;
 }
