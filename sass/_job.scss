@@ -1,5 +1,7 @@
 .job {
   padding-bottom: 80px;
+  background-color: #f4f4f4;
+
 }
 .job__title {
   margin-bottom: 18px;
@@ -24,6 +26,8 @@
   text-transform: uppercase;
   color: var(--second-black-color);
   padding: 42px 77px 44px 77px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: var(--purple-color);
     color: #ffffff;

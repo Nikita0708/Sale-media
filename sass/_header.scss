@@ -29,7 +29,11 @@
   text-transform: uppercase;
   color: var(--black-color);
   padding: 29px 20px;
-  &:hover {
+  border-top: 4px solid #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     border-top: 4px solid var(--purple-color);
     color: var(--purple-color);
   }
@@ -44,7 +48,9 @@
 .list-icons__icon {
   cursor: pointer;
   fill: var(--black-color);
-  &:hover {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     fill: var(--purple-color);
   }
 }
@@ -62,5 +68,8 @@
   padding-left: 10px;
 }
 .header__form {
+  display: none;
+}
+.mob-menu-open-btn {
   display: none;
 }

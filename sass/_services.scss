@@ -21,6 +21,8 @@
   position: relative;
   background-color: var(--white-color);
   overflow: hidden;
+  outline: 1px solid #ffffff;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   & header {
     position: absolute;
     padding: 10px 20px;

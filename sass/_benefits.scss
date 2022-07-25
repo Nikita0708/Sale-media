@@ -1,35 +1,81 @@
 .benefits {
-  padding-bottom: 90px;
+  // padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 90px;
+  }
 }
 .benefits__title {
-  margin-bottom: 115px;
+  // margin-top: -77px;
+  @media screen and (min-width: 1200px) {
+    margin-top: -77px;
+  }
 }
 .benefits__wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 62px;
-  grid-column-gap: 65px;
+  // margin-top: 115px;
+  margin-top: 30px;
+  display: flex;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-row-gap: 62px;
+  // grid-column-gap: 65px;
+  overflow: scroll;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 65px;
+    grid-row-gap: 40px;
+    overflow: unset;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 115px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 62px;
+    grid-column-gap: 65px;
+    margin-top: 115px;
+  }
 }
 .benefits-article__title {
   font-weight: 700;
-  font-size: 22px;
-  line-height: 1.14;
+  // font-size: 22px;
+  // line-height: 1.14;
+  font-size: 18px;
+  line-height: calc(21 / 18);
   color: var(--second-black-color);
-  margin-bottom: 14px;
+  // margin-bottom: 14px;
+  margin-bottom: 11px;
+  @media screen and (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 1.14;
+    margin-bottom: 14px;
+  }
 }
 .benefits-article__text {
   font-size: 12px;
-  line-height: 1.67;
+  line-height: calc(14 / 12);
   color: var(--second-black-color);
 }
 .benefits__article {
   display: flex;
   & div {
-    width: 310px;
+    // width: 310px;
+    width: 230px;
+    @media screen and (min-width: 768px) {
+      width: 310px;
+    }
+  }
+  &:not(:last-child) {
+    margin-right: 15px;
   }
 }
 .benefits__article::before {
   content: url('../images/check-circle.svg');
   margin-right: 10px;
-  margin-top: 10px;
+  // margin-top: 10px;
+  margin-top: 4px;
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
 }

@@ -20,6 +20,9 @@
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  outline: 1px solid transparent;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:not(:last-child) {
     margin-right: 15px;
   }
@@ -47,6 +50,7 @@
   font-size: 14px;
   line-height: 1.43;
   color: var(--black-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .popup2__label {
   font-weight: 400;
@@ -63,10 +67,17 @@
   border: 1px solid #e1e1e1;
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::placeholder {
     font-size: 12px;
     line-height: 1.75;
     color: #b3b3b3;
+  }
+  &:hover {
+    border: 1px solid var(--purple-color);
+  }
+  &:focus {
+    outline: 1px solid var(--purple-color);
   }
 }
 .popup2__submit {
