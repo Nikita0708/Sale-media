@@ -1,29 +1,61 @@
 .questions {
   background-color: var(--purple-color);
-  padding-top: 24px;
-  padding-bottom: 23px;
+  padding: 20px;
   & .container {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 23px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-
 .questions__title {
-  width: 294px;
+  // width: 294px;
+  text-align: center;
+  max-width: 320px;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 1.14;
+  // font-size: 22px;
+  // line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   color: var(--white-color);
-  margin-right: 34px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  // margin-right: 34px;
+  @media screen and (min-width: 1200px) {
+    width: 294px;
+    margin-right: 34px;
+    font-size: 22px;
+    line-height: 1.14;
+  }
 }
 .questions__text {
-  font-size: 14px;
-  line-height: 1.43;
+  text-align: center;
+  // font-size: 14px;
+  // line-height: 1.43;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   color: var(--white-color);
-  margin-right: 141px;
+  margin-bottom: 20px;
+  // margin-right: 141px;
   & span {
     font-weight: 700;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 141px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+.btn__wrap {
+  display: flex;
+  justify-content: center;
 }
 .questions__btn {
   min-width: 180px;
@@ -36,12 +68,22 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--purple-color);
-  margin-left: auto;
+
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 .questions__soc-wrap {
   display: flex;
   align-items: center;
+  justify-content: center; //mob
+  margin-bottom: 20px; // mob
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    justify-content: unset;
+    margin-right: 78px;
+  }
 }
 .questions__soc-link {
   display: flex;

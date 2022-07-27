@@ -2,6 +2,16 @@
   & .container {
     display: flex;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.logo {
+  width: 108px;
+  height: 23px;
+  @media screen and (min-width: 1200px) {
+    width: 128px;
+    height: 26px;
   }
 }
 .logo__wrap {
@@ -9,15 +19,20 @@
   padding-bottom: 11px;
 }
 .header__logo-text {
-  font-size: 16px;
-  line-height: 1.25;
+  // font-size: 16px;
+  // line-height: 1.25;
+  font-size: 11px;
+  line-height: calc(13 / 11);
   color: var(--second-black-color);
-  margin-top: 5px;
+  // margin-top: 5px;
+  margin-top: 2px;
 }
 .header__nav {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 19px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 20px;
+  }
 }
 .header__list {
   display: flex;
@@ -55,10 +70,14 @@
   }
 }
 .header__tel {
+  display: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   color: var(--purple-color);
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 .header-input {
   width: 200px;
@@ -71,5 +90,56 @@
   display: none;
 }
 .mob-menu-open-btn {
-  display: none;
+  margin-right: 14px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+/*--------------MOB-Menu------------*/
+.mob-menu {
+  position: fixed;
+  top: 64px;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffff;
+  z-index: 1;
+  & .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.mob__list {
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+.mob__item:not(:last-child) {
+  border-bottom: 1px solid #e1e1e1;
+}
+.mob__item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.mob__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+.menu__icon {
+  display: block;
+  margin-left: auto;
+}
+.mob__item--second-floor {
+  width: 100%;
+  padding: 20px 20px 20px 40px;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
 }
