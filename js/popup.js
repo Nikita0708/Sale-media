@@ -10,6 +10,7 @@
 
   function togglePopup() {
     refs.popup.classList.toggle('is-hidden');
+    document.body.classList.toggle('no-skroll');
   }
 })();
 (() => {
@@ -23,6 +24,6 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('no-skroll'), refs.modal.classList.toggle('is-hidden');
   }
 })();

@@ -39,7 +39,25 @@
         <nav class="header__nav">
           <ol class="header__list">
             <li class="header__item"><a href="" class="header-link">главная</a></li>
-            <li class="header__item"><a href="" class="header-link">услуги</a></li>
+            <li class="header__item" onclick="opensecond('second'); return false">
+              <a href="" class="header-link">услуги</a>
+            </li>
+            <li class="header__item--second" id="second" style="display: none">
+              <div class="second__floor"><a href="">E-commerce</a></div>
+              <div class="second__floor"><a href="">аналитика</a></div>
+              <div class="second__floor"><a href="">аналитика</a></div>
+              <div class="second__floor"><a href="">социальные сети</a></div>
+              <div class="second__floor" onclick="openthird('third'); return false">
+                <a href="">аналитика</a>
+              </div>
+              <div class="second__floor"><a href="">социальные сети</a></div>
+            </li>
+            <li class="header__item--third" id="third" style="display: none">
+              <div class="third__floor"><a href="">E-commerce</a></div>
+              <div class="third__floor"><a href="">аналитика</a></div>
+              <div class="third__floor"><a href="">аналитика</a></div>
+              <div class="third__floor"><a href="">социальные сети</a></div>
+            </li>
             <li class="header__item"><a href="" class="header-link">1с битрикс</a></li>
             <li class="header__item"><a href="" class="header-link">битрикс24</a></li>
             <li class="header__item"><a href="" class="header-link">маркет</a></li>
@@ -47,9 +65,12 @@
             <li class="header__item"><a href="" class="header-link">контакты</a></li>
           </ol>
         </nav>
-        <a href="" class="header__tel">+7 495 128-8976</a>
+        <a href="" class="header__tel" id="tel">+7 495 128-8976</a>
         <ul class="header__list-icons">
-          <li class="list-icons__item list-icons__item--first">
+          <li
+            class="list-icons__item list-icons__item--first"
+            onclick="openinput('form'); return false"
+          >
             <svg class="list-icons__icon list-icons__icon--first" width="20" height="20">
               <use href="./images/sprite.svg#icon-search"></use>
             </svg>
@@ -65,28 +86,33 @@
             </svg>
           </li>
           <li class="list-icons__item">
-            <svg class="list-icons__icon" width="20" height="20">
+            <svg class="list-icons__icon list-icons__icon--third" width="20" height="20">
               <use href="./images/sprite.svg#icon-shopping-cart"></use>
             </svg>
           </li>
-          <li class="list-icons__item">
+          <li class="list-icons__item" onclick="opentel('tel'); return false">
             <svg class="list-icons__icon" width="20" height="20">
               <use href="./images/sprite.svg#icon-call"></use>
             </svg>
           </li>
         </ul>
-        <form class="header__form">
+        <form class="header__form" id="form" style="display: none">
           <input type="text" name="search" id="search" class="header-input" placeholder="Искать" />
-          <svg width="20" height="20">
+          <svg
+            width="20"
+            height="20"
+            class="header-form__icon"
+            onclick="openinput('form'); return false"
+          >
             <use href="./images/sprite.svg#icon-search"></use>
           </svg>
         </form>
         <article class="mob-menu is-hidden">
           <div class="container">
             <ol class="mob__list">
-              <li class="mob__item" onclick="openbox('box'); return false">
-                <a href="" class="mob__link">главная</a
-                ><svg width="24" height="24" class="menu__icon">
+              <li class="mob__item menu" onclick="openbox('box'), closeitem('item'); return false">
+                <a href="" class="mob__link">главная</a>
+                <svg width="24" height="24" class="menu__icon">
                   <use href="./images/sprite.svg#icon-chevron-down"></use>
                 </svg>
                 <!-- <div id="box" style="display: none">
@@ -99,11 +125,22 @@
                 </div> -->
               </li>
               <li id="box" style="display: none">
-                <div class="mob__item--second-floor">
+                <div class="mob__item--second-floor menu2" onclick="openbox2('box2'); return false">
                   <a href="" class="mob__link">E-commerce</a
                   ><svg width="24" height="24" class="menu__icon">
                     <use href="./images/sprite.svg#icon-chevron-down"></use>
                   </svg>
+                </div>
+                <div class="third-floor-wrap" id="box2" style="display: none">
+                  <div class="mob__item--third-floor">
+                    <a href="" class="mob__link">E-commerce</a>
+                  </div>
+                  <div class="mob__item--third-floor">
+                    <a href="" class="mob__link">аналитика</a>
+                  </div>
+                  <div class="mob__item--third-floor">
+                    <a href="" class="mob__link">социальные сети</a>
+                  </div>
                 </div>
                 <div class="mob__item--second-floor">
                   <a href="" class="mob__link">аналитика</a
@@ -136,41 +173,43 @@
                   </svg>
                 </div>
               </li>
-              <li class="mob__item">
-                <a href="" class="mob__link">услуги</a
-                ><svg width="24" height="24" class="menu__icon">
-                  <use href="./images/sprite.svg#icon-chevron-down"></use>
-                </svg>
-              </li>
-              <li class="mob__item">
-                <a href="" class="mob__link">1с битрикс</a
-                ><svg width="24" height="24" class="menu__icon">
-                  <use href="./images/sprite.svg#icon-chevron-down"></use>
-                </svg>
-              </li>
-              <li class="mob__item">
-                <a href="" class="mob__link">битрикс24</a
-                ><svg width="24" height="24" class="menu__icon">
-                  <use href="./images/sprite.svg#icon-chevron-down"></use>
-                </svg>
-              </li>
-              <li class="mob__item">
-                <a href="" class="mob__link">маркет</a
-                ><svg width="24" height="24" class="menu__icon">
-                  <use href="./images/sprite.svg#icon-chevron-down"></use>
-                </svg>
-              </li>
-              <li class="mob__item">
-                <a href="" class="mob__link">о нас</a
-                ><svg width="24" height="24" class="menu__icon">
-                  <use href="./images/sprite.svg#icon-chevron-down"></use>
-                </svg>
-              </li>
-              <li class="mob__item">
-                <a href="" class="mob__link">контакты</a
-                ><svg width="24" height="24" class="menu__icon">
-                  <use href="./images/sprite.svg#icon-chevron-down"></use>
-                </svg>
+              <li id="item" style="display: block">
+                <div class="mob__item menu">
+                  <a href="" class="mob__link">услуги</a
+                  ><svg width="24" height="24" class="menu__icon">
+                    <use href="./images/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
+                <div class="mob__item menu" id="item" style="display: flex">
+                  <a href="" class="mob__link">1с битрикс</a
+                  ><svg width="24" height="24" class="menu__icon">
+                    <use href="./images/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
+                <div class="mob__item menu" id="item" style="display: flex">
+                  <a href="" class="mob__link">битрикс24</a
+                  ><svg width="24" height="24" class="menu__icon">
+                    <use href="./images/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
+                <div class="mob__item menu" id="item" style="display: flex">
+                  <a href="" class="mob__link">маркет</a
+                  ><svg width="24" height="24" class="menu__icon">
+                    <use href="./images/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
+                <div class="mob__item menu" id="item" style="display: flex">
+                  <a href="" class="mob__link">о нас</a
+                  ><svg width="24" height="24" class="menu__icon">
+                    <use href="./images/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
+                <div class="mob__item menu" id="item" style="display: flex">
+                  <a href="" class="mob__link">контакты</a
+                  ><svg width="24" height="24" class="menu__icon">
+                    <use href="./images/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
               </li>
             </ol>
           </div>
@@ -817,7 +856,7 @@
       <a href="" class="mob-form__link"> Whatsapp </a>
       <a href="" class="mob-form__link">позвонить</a>
     </aside> -->
-    <div class="backdrop is-hidden" data-popup>
+    <div class="backdrop is-hidden no-skroll" data-popup>
       <div class="popup-1">
         <button type="button" class="popup__btn-close" data-popup-close>
           <svg width="8" height="8" class="popup__icon">
@@ -842,7 +881,7 @@
         </div>
       </div>
     </div>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden no-skroll" data-modal>
       <div class="popup-2">
         <button type="button" data-modal-close class="popup__btn-close">
           <svg width="8" height="8" class="popup__icon">
@@ -887,6 +926,73 @@
           document.getElementById(id).style.display = 'none';
         }
       }
+      function openbox2(id) {
+        display = document.getElementById(id).style.display;
+
+        if (display == 'none') {
+          document.getElementById(id).style.display = 'block';
+        } else {
+          document.getElementById(id).style.display = 'none';
+        }
+      }
+      function closeitem(id) {
+        display = document.getElementById(id).style.display;
+
+        if (display == 'block') {
+          document.getElementById(id).style.display = 'none';
+        } else {
+          document.getElementById(id).style.display = 'block';
+        }
+      }
+      function openinput(id) {
+        display = document.getElementById(id).style.display;
+
+        if (display == 'none') {
+          document.getElementById(id).style.display = 'block';
+        } else {
+          document.getElementById(id).style.display = 'none';
+        }
+      }
+      function opentel(id) {
+        display = document.getElementById(id).style.display;
+
+        if (display == 'none') {
+          document.getElementById(id).style.display = 'block';
+        } else {
+          document.getElementById(id).style.display = 'none';
+        }
+      }
+      function opensecond(id) {
+        display = document.getElementById(id).style.display;
+
+        if (display == 'none') {
+          document.getElementById(id).style.display = 'block';
+        } else {
+          document.getElementById(id).style.display = 'none';
+        }
+      }
+      function openthird(id) {
+        display = document.getElementById(id).style.display;
+
+        if (display == 'none') {
+          document.getElementById(id).style.display = 'block';
+        } else {
+          document.getElementById(id).style.display = 'none';
+        }
+      }
+
+      document.addEventListener('click', function (e) {
+        const el = e.target.closest('.menu');
+        if (el) {
+          el.classList.toggle('active-menu');
+        }
+      });
+      document.addEventListener('click', function (e) {
+        const cl = e.target.closest('.menu2');
+        if (cl) {
+          cl.classList.toggle('active-menu2');
+        }
+      });
     </script>
   </body>
 </html>
