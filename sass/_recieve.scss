@@ -13,7 +13,6 @@
 }
 .recieve__thumb {
   padding: 20px;
-  // border-radius: 20px;
   background-color: #ffffff;
   @media screen and (min-width: 768px) {
     border-radius: 20px;
@@ -28,7 +27,6 @@
   margin-bottom: 80px;
 }
 .recieve-wrap__title {
-  // width: 879px;
   max-width: 100%;
   font-size: 22px;
   line-height: 1.14;
@@ -36,7 +34,6 @@
   margin-bottom: 12px;
 }
 .recieve-wrap__text {
-  // width: 879px;
   font-size: 12px;
   line-height: calc(14 / 12);
   color: var(--second-black-color);
@@ -57,7 +54,6 @@
   margin-bottom: 16px;
 }
 .recieve__wrap {
-  // width: 879px;
   min-width: 320px;
   display: flex;
   flex-wrap: wrap;

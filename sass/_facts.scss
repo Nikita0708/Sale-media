@@ -1,5 +1,4 @@
 .facts {
-  // padding-bottom: 147px;
   padding-bottom: 50px;
   padding-top: 40px;
   @media screen and (min-width: 1200px) {
@@ -9,14 +8,12 @@
 }
 
 .facts__title {
-  // margin-bottom: 23px;
   margin-bottom: 20px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 23px;
   }
 }
 .facts__wrap {
-  // display: flex;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -28,9 +25,7 @@
 .facts__card {
   & span {
     font-weight: 700;
-    // font-size: 64px;
     font-size: 48px;
-    // line-height: 1.16;
     line-height: 1.15;
     color: var(--purple-color);
     margin-bottom: 5px;
@@ -41,7 +36,6 @@
     }
   }
   &:not(:last-child) {
-    // margin-right: 20px;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
@@ -52,8 +46,6 @@
   }
 }
 .facts__text {
-  // font-size: 16px;
-  // line-height: 1.31;
   font-size: 12px;
   line-height: 1.17;
   color: var(--black-color);

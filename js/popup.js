@@ -9,8 +9,8 @@
   refs.closePopupBtn.addEventListener('click', togglePopup);
 
   function togglePopup() {
-    refs.popup.classList.toggle('is-hidden');
     document.body.classList.toggle('no-skroll');
+    refs.popup.classList.toggle('is-hidden');
   }
 })();
 (() => {
@@ -24,6 +24,7 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle('no-skroll'), refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('no-skroll');
+    refs.modal.classList.toggle('is-hidden');
   }
 })();

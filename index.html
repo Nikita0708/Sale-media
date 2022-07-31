@@ -39,24 +39,36 @@
         <nav class="header__nav">
           <ol class="header__list">
             <li class="header__item"><a href="" class="header-link">главная</a></li>
-            <li class="header__item" onclick="opensecond('second'); return false">
-              <a href="" class="header-link">услуги</a>
-            </li>
-            <li class="header__item--second" id="second" style="display: none">
-              <div class="second__floor"><a href="">E-commerce</a></div>
-              <div class="second__floor"><a href="">аналитика</a></div>
-              <div class="second__floor"><a href="">аналитика</a></div>
-              <div class="second__floor"><a href="">социальные сети</a></div>
-              <div class="second__floor" onclick="openthird('third'); return false">
-                <a href="">аналитика</a>
-              </div>
-              <div class="second__floor"><a href="">социальные сети</a></div>
-            </li>
-            <li class="header__item--third" id="third" style="display: none">
-              <div class="third__floor"><a href="">E-commerce</a></div>
-              <div class="third__floor"><a href="">аналитика</a></div>
-              <div class="third__floor"><a href="">аналитика</a></div>
-              <div class="third__floor"><a href="">социальные сети</a></div>
+            <li class="header__item">
+              <a href="#" class="header-link">услуги</a>
+              <ul class="header__item--second">
+                <li class="second__floor"><a href="#" class="second-floor__link">E-commerce</a></li>
+                <li class="second__floor"><a href="#" class="second-floor__link">аналитика</a></li>
+                <li class="second__floor"><a href="#" class="second-floor__link">аналитика</a></li>
+                <li class="second__floor">
+                  <a href="#" class="second-floor__link">социальные сети</a>
+                </li>
+                <li class="second__floor">
+                  <a href="#" class="second-floor__link">аналитика</a>
+                  <ul class="header__item--third">
+                    <li class="third__floor">
+                      <a href="#" class="third-floor__link">E-commerce</a>
+                    </li>
+                    <li class="third__floor">
+                      <a href="#" class="third-floor__link">аналитика</a>
+                    </li>
+                    <li class="third__floor">
+                      <a href="#" class="third-floor__link">аналитика</a>
+                    </li>
+                    <li class="third__floor">
+                      <a href="#" class="third-floor__link">социальные сети</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="second__floor">
+                  <a href="#" class="second-floor__link">социальные сети</a>
+                </li>
+              </ul>
             </li>
             <li class="header__item"><a href="" class="header-link">1с битрикс</a></li>
             <li class="header__item"><a href="" class="header-link">битрикс24</a></li>
@@ -65,7 +77,7 @@
             <li class="header__item"><a href="" class="header-link">контакты</a></li>
           </ol>
         </nav>
-        <a href="" class="header__tel" id="tel">+7 495 128-8976</a>
+        <a href="" class="header__tel" id="tel" style="display: none">+7 495 128-8976</a>
         <ul class="header__list-icons">
           <li
             class="list-icons__item list-icons__item--first"
@@ -107,7 +119,7 @@
             <use href="./images/sprite.svg#icon-search"></use>
           </svg>
         </form>
-        <article class="mob-menu is-hidden">
+        <article class="mob-menu is-hidden no-skroll">
           <div class="container">
             <ol class="mob__list">
               <li class="mob__item menu" onclick="openbox('box'), closeitem('item'); return false">
@@ -739,58 +751,69 @@
           </div>
         </article>
       </section>
-      <!-- <footer class="cities">
-      <article class="container">
-        <div class="town">
-          <span class="city">Москва</span>
-          <div class="cities__thumb">
-            <div>
-              <div class="adress__wrap">
-                <span class="cities__text">Адрес</span>
-                <a href="" class="cities__info">
-                  Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11
-                </a>
-              </div>
-              <div class="email__wrap">
-                <span class="cities__text">Электронная почта</span>
-                <a href="" class="cities__info">info@salemedia.org</a>
+      <footer class="cities">
+        <article class="container">
+          <div class="citymob-wrap _tabs">
+            <div
+              class="city-mob _tabs-item _tabs-block _active"
+              onclick="closetown('town'); return true"
+            >
+              Москва
+            </div>
+            <div class="city-mob _tabs-block _tabs-item" onclick="opentown('town'); return true">
+              Рига
+            </div>
+          </div>
+          <div class="town__wrap">
+            <div class="town town--first">
+              <span class="city">Москва</span>
+              <div class="cities__thumb">
+                <div>
+                  <div class="adress__wrap">
+                    <span class="cities__text">Адрес</span>
+                    <a href="" class="cities__info">
+                      Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11
+                    </a>
+                  </div>
+                  <div class="email__wrap">
+                    <span class="cities__text">Электронная почта</span>
+                    <a href="" class="cities__info">info@salemedia.org</a>
+                  </div>
+                </div>
+                <div class="tel__wrap">
+                  <span class="cities__text">Телефон</span>
+                  <div>
+                    <a href="" class="cities__info">8 495 625 35 81</a>
+                    <a href="" class="cities__info">8 800 200 23 16</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="tel__wrap">
-              <span class="cities__text">Телефон</span>
-              <div>
-                <a href="" class="cities__info">8 495 625 35 81</a>
-                <a href="" class="cities__info">8 800 200 23 16</a>
+            <div class="town" id="town" style="display: none">
+              <span class="city">Рига</span>
+              <div class="cities__thumb">
+                <div>
+                  <div class="adress__wrap">
+                    <span class="cities__text">Адрес</span>
+                    <a href="" class="cities__info"> Латвия, г. Рига, ул. Платич, д6, корп.1 </a>
+                  </div>
+                  <div class="email__wrap">
+                    <span class="cities__text">Электронная почта</span>
+                    <a href="" class="cities__info">info@salemedia.org</a>
+                  </div>
+                </div>
+                <div class="tel__wrap">
+                  <span class="cities__text">Телефон</span>
+                  <div>
+                    <a href="" class="cities__info">8 495 600 35 89</a>
+                    <a href="" class="cities__info">8 800 200 00 17</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="town">
-          <span class="city">Рига</span>
-          <div class="cities__thumb">
-            <div>
-              <div class="adress__wrap">
-                <span class="cities__text">Адрес</span>
-                <a href="" class="cities__info">
-                  Россия, г. Москва, ул. Ильинка, дом 23/16, подъезд 11
-                </a>
-              </div>
-              <div class="email__wrap">
-                <span class="cities__text">Электронная почта</span>
-                <a href="" class="cities__info">info@salemedia.org</a>
-              </div>
-            </div>
-            <div class="tel__wrap">
-              <span class="cities__text">Телефон</span>
-              <div>
-                <a href="" class="cities__info">8 495 600 35 89</a>
-                <a href="" class="cities__info">8 800 200 00 17</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </footer> -->
+        </article>
+      </footer>
       <aside class="questions">
         <article class="container">
           <div class="questions__title">Остались вопросы?</div>
@@ -836,7 +859,7 @@
         </div>
       </article>
     </footer>
-    <!-- <aside class="why">
+    <aside class="why" id="why" style="position: sticky">
       <article class="container">
         <div class="why__title">Почему не стоит откладывать <span>создание сайта</span>?</div>
         <p class="why__text">
@@ -844,18 +867,18 @@
           время! Пока вы раздумываете, ваши клиенты уходят к конкурентам.
         </p>
         <button type="button" class="why__btn">заказать сайт</button>
-        <button type="button" class="why__btn-close">
+        <button type="button" class="why__btn-close" onclick="closewhy('why'); return false">
           <svg width="10" height="10">
             <use href="./images/sprite.svg#icon-x"></use>
           </svg>
         </button>
       </article>
-    </aside> -->
+    </aside>
     <!-- временный класс "mob-form" -->
-    <!-- <aside class="mob-form">
+    <aside class="mob-form">
       <a href="" class="mob-form__link"> Whatsapp </a>
       <a href="" class="mob-form__link">позвонить</a>
-    </aside> -->
+    </aside>
     <div class="backdrop is-hidden no-skroll" data-popup>
       <div class="popup-1">
         <button type="button" class="popup__btn-close" data-popup-close>
@@ -890,13 +913,13 @@
         </button>
         <p class="popup2__title"><span>Куда</span> отправить портфолио?</p>
         <div class="popup__wrap">
-          <div class="popup2__wrap">
+          <div class="popup2__wrap sendPopup__social-btn">
             <p class="popup2__text popup2__text--first">Telegram</p>
           </div>
-          <div class="popup2__wrap">
+          <div class="popup2__wrap sendPopup__social-btn">
             <p class="popup2__text popup2__text--second">Whatsapp</p>
           </div>
-          <div class="popup2__wrap">
+          <div class="popup2__wrap sendPopup__social-btn">
             <p class="popup2__text popup2__text--third">E-mail</p>
           </div>
         </div>
@@ -916,83 +939,8 @@
     <script src="./js/popup.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
-    <script type="text/javascript">
-      function openbox(id) {
-        display = document.getElementById(id).style.display;
-
-        if (display == 'none') {
-          document.getElementById(id).style.display = 'block';
-        } else {
-          document.getElementById(id).style.display = 'none';
-        }
-      }
-      function openbox2(id) {
-        display = document.getElementById(id).style.display;
-
-        if (display == 'none') {
-          document.getElementById(id).style.display = 'block';
-        } else {
-          document.getElementById(id).style.display = 'none';
-        }
-      }
-      function closeitem(id) {
-        display = document.getElementById(id).style.display;
-
-        if (display == 'block') {
-          document.getElementById(id).style.display = 'none';
-        } else {
-          document.getElementById(id).style.display = 'block';
-        }
-      }
-      function openinput(id) {
-        display = document.getElementById(id).style.display;
-
-        if (display == 'none') {
-          document.getElementById(id).style.display = 'block';
-        } else {
-          document.getElementById(id).style.display = 'none';
-        }
-      }
-      function opentel(id) {
-        display = document.getElementById(id).style.display;
-
-        if (display == 'none') {
-          document.getElementById(id).style.display = 'block';
-        } else {
-          document.getElementById(id).style.display = 'none';
-        }
-      }
-      function opensecond(id) {
-        display = document.getElementById(id).style.display;
-
-        if (display == 'none') {
-          document.getElementById(id).style.display = 'block';
-        } else {
-          document.getElementById(id).style.display = 'none';
-        }
-      }
-      function openthird(id) {
-        display = document.getElementById(id).style.display;
-
-        if (display == 'none') {
-          document.getElementById(id).style.display = 'block';
-        } else {
-          document.getElementById(id).style.display = 'none';
-        }
-      }
-
-      document.addEventListener('click', function (e) {
-        const el = e.target.closest('.menu');
-        if (el) {
-          el.classList.toggle('active-menu');
-        }
-      });
-      document.addEventListener('click', function (e) {
-        const cl = e.target.closest('.menu2');
-        if (cl) {
-          cl.classList.toggle('active-menu2');
-        }
-      });
-    </script>
+    <script src="./js/clicks.js"></script>
+    <script src="./js/cities.js"></script>
+    <script src="./js/port.js"></script>
   </body>
 </html>

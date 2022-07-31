@@ -1,0 +1,39 @@
+.mob-form {
+  padding: 10px;
+  position: sticky;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  bottom: 0;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.mob-form__link {
+  min-width: 165px;
+  height: 40px;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.mob-form__link:first-child {
+  background-color: #29a71a;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: url('/images/watsapp24.svg');
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+.mob-form__link:last-child {
+  background-color: var(--purple-color);
+}

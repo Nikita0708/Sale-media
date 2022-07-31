@@ -28,12 +28,9 @@
   padding-bottom: 11px;
 }
 .header__logo-text {
-  // font-size: 16px;
-  // line-height: 1.25;
   font-size: 11px;
   line-height: calc(13 / 11);
   color: var(--second-black-color);
-  // margin-top: 5px;
   margin-top: 2px;
   @media screen and (min-width: 1200px) {
     font-size: 16px;
@@ -45,7 +42,6 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
-    // margin-left: 20px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 20px;
@@ -56,11 +52,8 @@
 }
 .header-link {
   font-weight: 700;
-  // font-size: 12px;
-  // line-height: 1.17;
   text-transform: uppercase;
   color: var(--black-color);
-  // padding: 29px 20px;
   padding: 24px 10px;
   border-top: 4px solid #fff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -91,7 +84,6 @@
   }
 }
 .list-icons__item:not(:last-child) {
-  // margin-right: 15px;
   margin-right: 5px;
   @media screen and (min-width: 1200px) {
     margin-right: 15px;
@@ -126,11 +118,8 @@
   top: 45px;
   right: 10px;
   color: var(--purple-color);
-  // @media screen and (min-width: 768px) {
-  //   display: block;
-  // }
   @media screen and (min-width: 1200px) {
-    display: block;
+    display: block !important;
     position: unset;
   }
 }
@@ -162,7 +151,6 @@
   position: absolute;
   right: 10px;
   top: 7px;
-
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover {
@@ -272,12 +260,8 @@
     color: var(--purple-color);
   }
 }
-
 .header__item--second {
-  top: 71px;
-  position: absolute;
   z-index: 1;
-  left: 337px;
   background-color: #fff;
   border-radius: 0px 0px 0px 15px;
 }
@@ -300,15 +284,33 @@
   &:not(:last-child) {
     border-bottom: 1px solid #e1e1e1;
   }
-  &:hover a {
-    color: var(--purple-color);
-  }
+}
+.second__floor:hover .second-floor__link {
+  color: var(--purple-color);
+}
+.third__floor:hover .third-floor__link {
+  color: var(--purple-color);
 }
 .header__item--third {
-  position: absolute;
   background-color: #fff;
   z-index: 1;
   border-radius: 0px 15px 15px 15px;
-  top: 269px;
-  left: 526px;
+}
+.header__list li {
+  position: relative;
+}
+.header__list ul {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  display: none;
+  padding: 0;
+}
+.header__list li:hover > ul {
+  display: block;
+}
+.header__list ul ul {
+  display: none;
+  top: 0;
+  left: 100%;
 }

@@ -1,5 +1,5 @@
 .services {
-  padding-top: 40px; //mob
+  padding-top: 40px;
   padding-bottom: 40px;
   @media screen and (min-width: 1200px) {
     padding-bottom: 80px;
@@ -26,7 +26,6 @@
   margin-bottom: 33px;
 }
 .services__article {
-  // width: 380px;
   min-width: 278px;
   border-radius: 20px;
   position: relative;
@@ -42,11 +41,8 @@
   }
   & header {
     position: absolute;
-    // padding: 10px 20px;
     padding: 7px 15px 8px 15px;
-    // left: 76px;
     left: 38px;
-    // width: max-content;
     width: 202px;
     border-radius: 0px 0px 10px 10px;
     background-color: var(--white-color);
@@ -56,10 +52,8 @@
       padding: 10px 20px;
     }
     & p {
-      text-align: center; // mob
+      text-align: center;
       font-weight: 700;
-      // font-size: 12px;
-      // line-height: 1.25;
       font-size: 11px;
       line-height: calc(13 / 11);
       color: var(--purple-color);
@@ -73,7 +67,7 @@
     outline: 1px solid var(--purple-color);
   }
   &:not(:last-child) {
-    margin-right: 15px; // mob
+    margin-right: 15px;
     @media screen and (min-width: 1200px) {
       margin-right: 0;
     }
@@ -88,11 +82,7 @@
   & .sale {
     display: block;
     width: max-content;
-    // padding-top: 9px;
-    // padding-bottom: 8px;
-    // padding-left: 10px;
-    // padding-right: 10px;
-    padding: 8px 9px 7px 9px; //mob
+    padding: 8px 9px 7px 9px;
     background-color: var(--purple-color);
     border-radius: 5px;
     margin-right: 10px;
@@ -101,8 +91,6 @@
     }
     & span {
       font-weight: 700;
-      // font-size: 12px;
-      // line-height: 1.25;
       font-size: 11px;
       line-height: calc(13 / 11);
       text-transform: uppercase;
@@ -124,8 +112,6 @@
     background-color: #ffffff;
     & .price {
       font-weight: 700;
-      // font-size: 12px;
-      // line-height: 1.25;
       font-size: 11px;
       line-height: calc(13 / 11);
       color: var(--purple-color);
@@ -141,7 +127,6 @@
   }
 }
 .services-article__wrap {
-  // padding: 40px;
   padding: 27px 20px 30px 20px;
   @media screen and (min-width: 1200px) {
     padding: 40px;
@@ -149,31 +134,24 @@
 }
 .services-article__title {
   display: block;
-  // margin-bottom: 30px;
   margin-bottom: 25px;
   color: var(--second-black-color);
   & h2 {
-    // font-size: 22px;
-    // line-height: 1.14;
     font-size: 18px;
     line-height: calc(21 / 18);
   }
 }
 .services__text {
   font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.43;
   font-size: 12px;
   line-height: calc(14 / 12);
   color: var(--black-color);
-  // margin-bottom: 33px;
   margin-bottom: 30px;
 }
 .services__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 300px;
   width: 238px;
   height: 40px;
   border: 1px solid var(--purple-color);
@@ -184,11 +162,13 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--purple-color);
+  @media screen and (min-width: 1200px) {
+    width: 300px;
+  }
 }
 /*---------------------FOOTER--------------- */
 .services__footer {
   background-color: #ffffff;
-  // padding: 35px 40px 44px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -203,14 +183,10 @@
 }
 
 .services-footer__title {
-  // width: 212px;
-  text-align: center; // mob
-  // font-size: 22px;
-  // line-height: 1.14;
+  text-align: center;
   font-size: 18px;
   line-height: 21px;
   color: var(--second-black-color);
-  // margin-right: 29px;
   margin-bottom: 10px;
   & span {
     color: var(--purple-color);
@@ -219,6 +195,7 @@
     width: 212px;
     text-align: unset;
     margin-right: 29px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     font-size: 22px;
@@ -226,13 +203,10 @@
   }
 }
 .services-footer__text {
-  text-align: center; // mob
-  // max-width: 623px;
-  // font-size: 14px;
-  // line-height: 1.43;
+  text-align: center;
   font-size: 12px;
   line-height: calc(14 / 12);
-  margin-bottom: 20px; // mob
+  margin-bottom: 20px;
 
   color: var(--black-color);
   & span {
@@ -258,7 +232,6 @@
   height: 40px;
   border-radius: 10px;
   background-color: var(--purple-color);
-  // margin-left: auto;
   margin: 0 auto;
   & p {
     font-weight: 700;

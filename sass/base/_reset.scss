@@ -15,8 +15,6 @@ a {
 }
 img {
   display: block;
-  // max-width: 100%;
-  // min-width: 100%;
   height: auto;
 }
 ul,
@@ -60,6 +58,5 @@ button {
   background-color: #f4f4f4;
 }
 .no-skroll {
-  pointer-events: none;
   overflow: hidden;
 }
